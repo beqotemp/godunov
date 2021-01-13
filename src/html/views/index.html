@@ -1,0 +1,364 @@
+<% var data = {
+  title: "Main Page | Project",
+}; %>
+
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+<%= _.template(require('./../includes/promo.html'))(data) %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+<div class="background">
+  <div class="background__hole"></div>
+</div>
+<header id="main-header" class="main-header">
+  <div class="container">
+    <div class="main-slider">
+      <!-- SLIDES -->
+      <div id="slides" class="main-slider__slides">
+        <!-- slide -->
+        <div class="slide showing">
+          <div class="main-slide slide-first">
+            <div class="ms-intro">
+              <div class="ms-intro__pre-title">
+                <span>/ </span>
+                <span>Оптом и в розницу</span>
+              </div>
+              <div class="ms-intro__heading">
+                <h1 class="ms-intro__title">
+                  Продажа грузовых и крупногабаритных шин
+                </h1>
+              </div>
+              <div class="ms-intro__subtitle">
+                <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
+              </div>
+            </div>
+            <div class="ms-picture">
+              <div class="ms-picture__item">
+                <img src="../../img/slider/slider.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide END -->
+        
+        <!-- slide -->
+        <div class="slide">
+          <div class="main-slide slide-first">
+            <div class="ms-intro">
+              <div class="ms-intro__pre-title">
+                <span>/ </span>
+                <span>Консультация</span>
+              </div>
+              <div class="ms-intro__heading">
+                <h1 class="ms-intro__title">
+                  Бесплатно проконсультируем и ответим на все вопросы
+                </h1>
+              </div>
+              <div class="ms-intro__subtitle">
+                <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
+              </div>
+            </div>
+            <div class="ms-picture">
+              <div class="ms-picture__item ms-picture-second">
+                <img src="../../img/slider/slider2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide END -->
+        <!-- slide -->
+        <div class="slide">
+          <div class="main-slide slide-third">
+            <div class="ms-intro">
+              <div class="ms-intro__pre-title">
+                <span>/ </span>
+                <span>Акция</span>
+              </div>
+              <div class="ms-intro__heading">
+                <h1 class="ms-intro__title">
+                  Скидки 20% на грузовые шины
+                </h1>
+              </div>
+              <div class="ms-intro__subtitle">
+                <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
+              </div>
+            </div>
+            <div class="ms-picture">
+              <div class="ms-picture__item ms-picture-second">
+                <img src="../../img/slider/slider2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide END -->
+      </div>
+      <!-- slides END -->
+      <!-- Controlers -->
+      <div id="main-slider__dots" class="main-slider__dots dots"></div>
+      <div class="main-slider__arrows">
+        <div id="previous" class="slider-left-svg"></div>
+        <div id="next" class="slider-right-svg"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="oversized-preview" class="oversized-preview">
+  <div class="container">
+    <div class="oversized-preview__heading">
+      <h2 class="heading-first-type">
+        Крупногабаритные шины
+      </h2>
+      <a href="#" class="yellow-square-big">
+        <span>Все товары</span>
+      </a>
+    </div>
+    <div class="oversized-preview__wrapper">
+      <div class="row mp-product-row">
+
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        
+      </div>
+      <div class="oversized-preview__mobile-btn">
+        <a href="#" class="more-products-mobile-btn">
+          <span>Все товары</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="truck-preview" class="truck-preview">
+  <div class="container">
+    <div class="truck-preview__heading">
+      <h2 class="heading-first-type">
+        Грузовые шины
+      </h2>
+      <a href="#" class="yellow-square-big">
+        <span>Все товары</span>
+      </a>
+    </div>
+    <div class="truck-preview__wrapper">
+      <div class="row mp-product-row">
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        <%= _.template(require('./../includes/product-card.html'))(data) %>
+        
+      </div>
+      <div class="truck-preview__mobile-btn">
+        <a href="#" class="more-products-mobile-btn">
+          <span>Все товары</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  
+<section id="benefits" class="benefits">
+  <div class="container">
+    <div class="benefits__heading">
+      <h2 class="heading-first-type">
+        Почему выгодно покупать у нас?
+      </h2>
+    </div>
+    <div class="benefits__wrapper">
+      <div class="row">
+        <!-- item -->
+        <div class="benefit__wrapp">
+          <div class="benefit">
+            <div class="benefit__head">
+              <img src="../../img/general/benefit1.png" alt="">
+            </div>
+            <div class="benefit__heading">
+              <span>Вы знаете что покупает</span>
+            </div>
+            <div class="benefit__body">
+              <p>
+                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
+                и самостоятельно выбрать шины. Если такой возможности нет,
+                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- item END -->
+        <!-- item -->
+        <div class="benefit__wrapp">
+          <div class="benefit">
+            <div class="benefit__head">
+              <img src="../../img/general/benefit2.png" alt="">
+            </div>
+            <div class="benefit__heading">
+              <span>Доставка в любой город мира</span>
+            </div>
+            <div class="benefit__body">
+              <p>
+                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
+                и самостоятельно выбрать шины. Если такой возможности нет,
+                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- item END -->
+        <!-- item -->
+        <div class="benefit__wrapp">
+          <div class="benefit">
+            <div class="benefit__head">
+              <img src="../../img/general/benefit3.png" alt="">
+            </div>
+            <div class="benefit__heading">
+              <span>Лучшие цены на рынке</span>
+            </div>
+            <div class="benefit__body">
+              <p>
+                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
+                и самостоятельно выбрать шины. Если такой возможности нет,
+                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- item END -->
+        <!-- item -->
+        <div class="benefit__wrapp">
+          <div class="benefit">
+            <div class="benefit__head">
+              <img src="../../img/general/benefit4.png" alt="">
+            </div>
+            <div class="benefit__heading">
+              <span>Гибкие условия оплаты</span>
+            </div>
+            <div class="benefit__body">
+              <p>
+                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
+                и самостоятельно выбрать шины. Если такой возможности нет,
+                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- item END -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="reviews__heading">
+      <h2 class="heading-first-type">
+        Отзывы
+      </h2>  
+      <div class="reviews__buttons">
+        <a href="" class="make-review-text-btn">
+          <span>Оставить отзыв</span>
+        </a>
+        <a href="#" class="gray-empty-btn">
+          <span>Больше отзывов</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="reviews__wrapper">
+      <div class="row reviews-row">
+        
+
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+
+      </div>
+      <div class="reviews__mobile-btn">
+        <a href="#" class="more-reviews-mobile-btn">
+          <span>Все отзывы</span>
+        </a>
+        <a href="#" class="make-review-text-btn">
+          <span>Оставить отзыв</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<seciond id="about" class="about">
+  <div class="about__wrapper">
+    <div class="container">
+      <div class="about__body">
+        <div class="about__heading">
+          <h2 class="heading-first-type">
+            Rocket shina - работаем с 2010 года принося пользу нашим клиентам 
+          </h2>  
+          <div class="about__subtitle">
+            <p>
+              Мы всегда предлагаем Вам приехать к нам на склад 
+              в Москве и самостоятельно выбрать шины. Если такой
+              возможности нет, вы находитесь в регионе - высылаем
+              подробные
+            </p>
+          </div>
+          <div class="about__picture" style="background-image: url(../../img/general/about.png);"></div>
+        </div>
+        
+        
+        
+        <div class="about__block">
+          <div class="about-box__head">
+            <img src="../../img/general/about2.png" alt="">
+          </div>
+          <div class="about-box__intro">
+            <p>
+              Мы всегда предлагаем Вам приехать к нам на склад 
+              в Москве и самостоятельно выбрать шины. Если такой
+              возможности нет, вы находитесь в регионе - высылаем
+              подробные фото отгружаемых
+            </p>
+          </div>
+          <div class="about-box__btn">
+            <a href="">
+              <span>О компании</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</seciond>
+
+
+<%= _.template(require('./../includes/promot-section.html'))(data) %>
+
+<section id="fresh-articles" class="fresh-articles">
+  <div class="container">
+    <div class="fresh-articles__heading">
+      <h2 class="heading-first-type">
+        Статьи
+      </h2>
+      <a href="#" class="gray-empty-btn">
+        <span>Все статьи</span>
+      </a>
+    </div>
+    <div class="fresh-articles__wrapper">
+      <div class="row article-ro">
+        
+        <%= _.template(require('./../includes/article-preview.html'))(data) %>
+        <%= _.template(require('./../includes/article-preview.html'))(data) %>
+        <%= _.template(require('./../includes/article-preview.html'))(data) %>
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<%= _.template(require('./../includes/modals.html'))(data) %>
+<%= _.template(require('./../includes/footer.html'))(data) %>
