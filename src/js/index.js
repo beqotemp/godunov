@@ -9,7 +9,7 @@
 // import "./scripts/scrollbar";
 // import "./scripts/slider";
 // import "./scripts/tabs";
-import "./scripts/menu-scroll"
+// import "./scripts/menu-scroll"
 
 
 // // Vue
