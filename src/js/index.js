@@ -10,7 +10,7 @@
 // import "./scripts/slider";
 // import "./scripts/tabs";
 // import "./scripts/menu-scroll"
-
+import './scripts/temporary'
 
 // // Vue
 // import Vue from 'vue/dist/vue.common.dev';

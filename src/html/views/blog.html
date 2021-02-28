@@ -1,0 +1,181 @@
+<% var data = {
+    title: "Main Page | Project",
+  }; %>
+  
+  
+  <%= _.template(require('./../includes/head.html'))(data) %>
+  <%= _.template(require('./../includes/header.html'))(data) %>
+  
+  <section class="page-header blog">
+    <div class="container">
+      <div class="performance-counter blog-page">
+        <%= _.template(require('./../includes/performance.html'))(data) %>
+      </div>
+      <div class="page-header__wrapper">
+        <div class="page-header__heading">
+          <div class="page-header__title">
+            Блог
+            <span>(+7)</span>
+          </div>
+         
+        </div>
+
+        <!-- links -->
+        <div class="news-heading__links">
+          <div class="news-heading__links-row">
+            <a href="#" class="news-heading__links-item underlined-animation">
+              <span class="underlined-animation__sub">
+                vc.ru
+              </span>
+            </a>
+            <span class="plus">+</span>
+            <a href="#" class="news-heading__links-item underlined-animation">
+              <span class="underlined-animation__sub">
+                CMS
+              </span>  
+            </a>
+          </div>
+          <div class="news-heading__links-row">
+            <a href="#" class="news-heading__links-item underlined-animation">
+              <span class="underlined-animation__sub">
+                Habr
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- links END -->
+      </div>
+    </div>
+  </section>
+  <section id="news" class="news news-page">
+    <div class="container">
+      <div class="news__wrapper">
+        <!-- news cart -->
+        <div class="news__col">
+          <a href="#" class="news-cart">
+              <!-- news decoration -->
+            <div class="news-cart__deco">
+                <img src="../../img/general/deco.png" alt="">
+            </div>
+            <div class="news-cart__preview">
+              <img src="../../img/blog/yan.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Новости
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+        <!-- news cart -->
+        <div class="news__col">
+          <a href="#" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/thi.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Новости
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+        <!-- news cart -->
+        <div class="news__col">
+          <a href="#" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/petr.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Новости
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+        <!-- news cart -->
+        <div class="news__col">
+          <a href="#" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/content.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Новости
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+         <!-- news cart -->
+         <div class="news__col">
+          <a href="#" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/film.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Новости
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+         <!-- news cart -->
+         <div class="news__col">
+          <a href="#" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/rock.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Новости
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <%= _.template(require('./../includes/modals.html'))(data) %>
+  <%= _.template(require('./../includes/footer.html'))(data) %>

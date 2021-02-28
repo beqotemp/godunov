@@ -1,0 +1,424 @@
+.footer {
+    position: relative;
+    background-color: #171618;
+    padding: 126px 0 48px;
+    overflow: hidden;
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+        padding: 93px 0 38px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767    
+        overflow: hidden;
+        padding: 67px 0 28px;
+    }
+}
+.footer-first {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    z-index: 2;
+    &__logo {
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: none;
+        }
+        .footer-logo {
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+                height: 15px;
+                width: 100px;
+            }
+            background-color: #fff;
+            height: 21px;
+            width: 158px;
+        }
+    }
+    &__mail {
+        margin-left: -5px;
+    }
+    &__button {
+        padding-right: 40px;
+        
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            padding-right: 0;
+            margin-top: -16px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-top: unset;
+        }
+    }
+}
+.footer-second {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+    margin-top: 44px;
+    z-index: 2;
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+        margin-top: 34px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767    
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 18px;
+    }
+    &__dots {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: flex;
+        }
+        div {
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background-color: #494949;
+            margin-right: 4px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    &__cookies {
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-top: 35px;
+        }
+        img {
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+                width: 72px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767    
+                width: 60px;
+            }
+        }
+    }
+    &__nav {
+        margin-left:-25px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-left: 0;
+            width: 100%;
+            display: flex;
+            margin-top: 108px;
+            flex-direction: column;
+        }
+    }
+    &__contacts {
+        padding-right: 45px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            padding-right: 0;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            order: -1;
+        }
+    }
+}
+
+
+
+.footer-mail {
+    &__heading {
+        font-family: $TTR;
+        font-size: 14px;
+        color: #fff;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 11px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            font-size: 12px;
+            color: #89898A;
+        }
+    }
+    &__mail {
+        font-family: $TTR;
+        font-size: 50px;
+        line-height: 90px;
+        color: #fff;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 31px;
+            line-height: 63px;
+            margin-top: -15px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            font-size: 33px;
+            line-height: 53px;
+            margin-top: unset;
+        }
+        & .underlined-animation__sub:before {
+            background-color: #fff;
+            height: 2px;
+        }
+        & .underlined-animation__sub:after {
+            background-color: #131314;
+            height: 2px;
+        }
+    }
+    &__footer {
+        margin-top: 35px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            margin-top: 10px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-top: 15px;
+        }
+        span {
+            font-family: $TTR;
+            font-size: 14px;
+            color: #565556;
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+                font-size: 10px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767    
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.footer-button {
+    position: relative;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+        height: 170px;
+        width: 170px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767    
+        position: absolute;
+        top: 184px;
+        right: 0;
+        height: 160px;
+        width: 160px;
+    }
+    &:hover &__circle {
+        transform: scale(1);
+    }
+    &__preview {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: #FAC400;
+        border-radius: 50%;
+        z-index: 1;
+        span {
+            font-family: $TTS;
+            font-size: 14px;
+            color: #000;
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+                font-size: 13px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767    
+                font-size: 12px;
+            }
+        }
+    }
+    &__circle {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: #A0A0A0;
+        transform: scale(0);
+        transition:.4s cubic-bezier(.25,.74,.22,.99);
+        will-change: transform;
+        z-index: 2;
+        & .arrow-right-svg {
+            background-color: #fff;
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767    
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 48px;
+    }
+    &__item {
+        font-family: $TTR;
+        display: inline-flex;
+        font-size: 12px;
+        color: #89898A;
+        margin-right: 30px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 11px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            font-size: 10px;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: row;
+    &__number {
+        margin-right: 30px;
+        font-family: $TTR;
+        font-size: 13px;
+        color: #E8E8E8;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 11px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-right: 12px;
+            font-size: 13px;
+        }
+    }
+    &__time {
+        font-family: $TTR;
+        font-size: 13px;
+        color: #636363;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            display: none;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: block;
+        }
+    }
+}
+
+.footer-kaput {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    z-index: 2;
+
+    border-top: 1px solid #313131;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    padding-top: 55px;
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+        margin-top: 53px;
+        padding-top: 36px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767    
+        margin-top: 17px;
+        padding-top: 26px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: row;
+    }
+    &__logo {
+        display: none;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: block;
+        }
+        .footer-logo {
+            height: 15px;
+            width: 86px;
+            background-color: #fff;
+        }
+    }
+    &__dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-100%);
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: none;
+        }
+    }
+    &__left {
+        padding-right: 105px;
+        width: 50%;
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            width: 100%;
+            flex: 0 0 100%;
+            padding-right: 0;
+            align-items: center;
+        }
+    }
+    &__coopywriting {
+        font-family: $TTS;
+        font-size: 11px;
+        color: #E8E8E8;
+        opacity: .9;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 9px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: none;
+        }
+    }
+    &__preeza {
+        display: flex;
+        flex-direction: row;   
+    }
+    &__look-prez {
+        font-family: $TTR;
+        font-size: 11px;
+        opacity: .9;
+        color: #E8E8E8;
+        margin-right: 15px; 
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 9px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-right: 0;
+            font-size: 9px;
+        }
+    }
+    &__downl-prez {
+        font-family: $TTS;
+        font-size: 11px;
+        color: #636363;    
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 9px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: none;
+        }
+    }
+    &__polit {
+        font-family: $TTS;
+        color: #E8E8E8;
+        font-size: 11px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 9px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            display: none;
+        }
+    }
+}
+
+
+.footer-dots {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    &__dot {
+        border-radius: 50%;
+        height: 5px;
+        width: 5px;
+        background-color: #494949;
+        margin-right: 4px;
+    }
+}

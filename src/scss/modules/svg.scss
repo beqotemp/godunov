@@ -1,0 +1,17 @@
+.godunov-svg {
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/godunov.svg) no-repeat center;
+    mask: url(../img/svg/godunov.svg) no-repeat center;
+}
+
+.arrow-right-svg {
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/arrow-right.svg) no-repeat center;
+    mask: url(../img/svg/arrow-right.svg) no-repeat center;
+}
+
+.chevron-svg {
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/chevron.svg) no-repeat center;
+    mask: url(../img/svg/chevron.svg) no-repeat center;
+}

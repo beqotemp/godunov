@@ -1,0 +1,110 @@
+<% var data = {
+    title: "Main Page | Project",
+  }; %>
+  
+  
+  <%= _.template(require('./../includes/head.html'))(data) %>
+  <%= _.template(require('./../includes/header.html'))(data) %>
+  
+  
+  <section class="page-header portfolio">
+    <div class="container">
+      <div class="performance-counter portfolio-page">
+        <%= _.template(require('./../includes/performance.html'))(data) %>
+      </div>
+      <div class="page-header__wrapper">
+        <div class="page-header__heading">
+          <div class="page-header__title">
+            Кейсы
+            <span>(7)</span>
+          </div>
+          <div class="page-header__coins">
+            <img src="../../img/general/coins-second.png" alt="">
+          </div>
+        </div>
+
+        <!-- links -->
+        <div class="news-heading__links">
+          <div class="news-heading__links-row">
+            <a href="#" class="news-heading__links-item underlined-animation">
+              <span class="underlined-animation__sub">
+                vc.ru
+              </span>
+            </a>
+            <span class="plus">+</span>
+            <a href="#" class="news-heading__links-item underlined-animation">
+              <span class="underlined-animation__sub">
+                CMS
+              </span>  
+            </a>
+          </div>
+          <div class="news-heading__links-row">
+            <a href="#" class="news-heading__links-item underlined-animation">
+              <span class="underlined-animation__sub">
+                Habr
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- links END -->
+      </div>
+    </div>
+  </section>
+  
+  <section id="cases" class="cases cases-page">
+    <div class="container">
+      <div class="cases__wrapper">
+        <a href="#" class="case" style="background-image: url(../../img/portfolio/1.png);">
+          <div class="case__intro">
+            <div class="case__heading">
+              <div class="case__title underlined-animation">
+                <span class="underlined-animation__sub">Tekhnokultura</span> - онлайн магазин электроники широкого потребления
+              </div>
+            </div>
+            <div class="case__figure"></div>
+          </div>
+        </a>
+        <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png);">
+          <div class="case__intro">
+            <div class="case__heading">
+              <div class="case__title underlined-animation">
+                <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
+              </div>
+            </div>
+            <div class="case__figure">
+              <!-- <img src="../../img/portfolio/fig.png" alt=""> -->
+            </div>
+          </div>
+        </a>
+        <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png)">
+          <div class="case__intro">
+            <div class="case__heading">
+              <div class="case__title underlined-animation">
+                <span class="underlined-animation__sub">Tekhnokultura</span> - онлайн магазин электроники широкого потребления
+              </div>
+            </div>
+            <div class="case__figure">
+              
+            </div>
+          </div>
+        </a>
+        <a href="#" class="case" style="background-image: url(../../img/portfolio/3.png);">
+          <div class="case__intro">
+            <div class="case__heading">
+              <div class="case__title underlined-animation">
+                <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
+              </div>
+            </div>
+            <div class="case__figure">
+              
+            </div>
+          </div>
+        </a>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  <%= _.template(require('./../includes/modals.html'))(data) %>
+  <%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,26 +1,36 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
   @font-face {
-    font-family: "Activist Regular"; 
-    src: url(../fonts/Activist.woff);
+    font-family: "TTInterfaces Regular"; 
+    src: url(../fonts/TTInterfaces-Regular.woff);
   }
+  @font-face {
+    font-family: "TTInterfaces Semibold"; 
+    src: url(../fonts/TTInterfaces-SemiBold.woff);
+  }
+
+  @font-face {
+    font-family: "TTInterfaces Bold"; 
+    src: url(../fonts/TTInterfaces-Bold.woff);
+  }
+
+  @font-face {
+    font-family: "TTInterfaces Medium"; 
+    src: url(../fonts/TTInterfaces-Medium.woff);
+  }
+  
  @font-face {
-    font-family: "Gilroy Bold"; 
-    src: url(../fonts/Gilroy-Bold.woff);
+    font-family: "Graphik LCG Regular"; 
+    src: url(../fonts/GraphikLCG-Regular.woff);
   }
-  @font-face {
-    font-family: "Gilroy Light";
-    src: url(../fonts/Gilroy-Light.woff);
-  }
-  @font-face {
-    font-family: "Gilroy Medium";
-    src: url(../fonts/Gilroy-Medium.woff);
-  }
-  @font-face {
-    font-family: "Gilroy Regular";
-    src: url(../fonts/Gilroy-Regular.woff);
-  }
-  @font-face {
-    font-family: "Gilroy SemiBold";
-    src: url(../fonts/Gilroy-SemiBold.woff);
-  }
+  
+  // @font-face {
+  //   font-family: "Graphik LCG Medium"; 
+  //   src: url(../fonts/GraphikLCG-Medium.woff);
+  // }
+
+  // @font-face {
+  //   font-family: "Graphik LCG Bold"; 
+  //   src: url(../fonts/GraphikLCG-Bold.woff);
+  // }
+  

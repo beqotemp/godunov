@@ -1,0 +1,15 @@
+.menu {
+    z-index: 950;
+    &__bgc {
+        z-index: 950;
+    }
+    &__menu {
+        z-index: 951;
+    }
+}
+.modal {
+    z-index: 910;
+}
+.cookies {
+    z-index: 900;
+}

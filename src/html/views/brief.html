@@ -1,0 +1,217 @@
+<% var data = {
+    title: "Main Page | Project",
+  }; %>
+  
+  
+  <%= _.template(require('./../includes/head.html'))(data) %>
+  <%= _.template(require('./../includes/header.html'))(data) %>
+
+
+  <section id="brif" class="brif">
+    <form class="brif__wrapper">
+      <div class="brif-heading">
+        <div class="brif__left">
+          <div class="brif__dots">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="brif__right">
+          <div class="brif-heading__title">
+            <span>
+              Бриф
+            </span>
+          </div>
+          <div class="brif-heading__subtitle">
+            <p>Вы можете позвонить нам и мы заполним все за вас </p>
+            <p>+7 (967) 653-48-65 или написать на почту info@godunov.digital</p>
+          </div>
+        </div>
+      </div>
+      <!-- line -->
+      <div class="brif-lane">
+        <div class="brif__left">
+          <div class="brif-lane__pre-title">
+            <span>Услуги</span>
+          </div>
+        </div>
+        <div class="brif__right">
+          <div class="brif-lane__body">
+            <div class="brif-lane__description">
+              <span>Выберете одну или несколько услуг</span>
+            </div>
+            <div class="brif-checkboxes">
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>UI & UX дизайн</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Брендинг</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Логотип</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Разработка</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Интеграции</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Техническая поддержка</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Дизайн поддержка</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end LINe -->
+
+      <!-- line -->
+      <div class="brif-lane">
+        <div class="brif__left">
+          <div class="brif-lane__pre-title">
+            <span>Бюджет</span>
+          </div>
+        </div>
+        <div class="brif__right">
+          <div class="brif-lane__body">
+            <div class="brif-lane__description">
+              <span>Выберете одну или несколько услуг</span>
+            </div>
+            <div class="brif-checkboxes">
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Менее 300 тыс</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>500 тр</span>
+                </div>
+              </label>
+              <label class="brif-checkboxes__item">
+                <input type="checkbox">
+                <div class="brif-checkboxes__body">
+                  <span>Более 100000000</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end LINe -->
+
+      <!-- line -->
+      <div class="brif-lane">
+        <div class="brif__left">
+          <div class="brif-lane__pre-title">
+            <span>Задача</span>
+          </div>
+        </div>
+        <div class="brif__right">
+          <div class="brif-lane__body">
+            <div class="brif-lane__description">
+              <span>Выберете одну или несколько услуг</span>
+            </div>
+            <div class="brif-inputs">
+              <label class="brif-inputs__full">
+                <span>Задача</span>
+                <input type="text" class="" placeholder="Начните писать">
+              </label>
+            </div>
+            <!-- <div class="brif-attachment">
+              <label>
+
+                <input type="file" class="brif-attachment__item" name="files" multiple>
+              </label>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- end LINe -->
+
+      <!-- line -->
+      <div class="brif-lane">
+        <div class="brif__left">
+          <div class="brif-lane__pre-title">
+            <span>Контакты</span>
+          </div>
+        </div>
+        <div class="brif__right">
+          <div class="brif-lane__body">
+            <div class="brif-lane__description">
+              <span>Выберете одну или несколько услуг</span>
+            </div>
+            <div class="brif-inputs">
+              <label class="brif-inputs__half">
+                <span>Задача</span>
+                <input type="text" class="" placeholder="Александр">
+              </label>
+
+              <label class="brif-inputs__half">
+                <span>Компания</span>
+                <input type="text" class="" placeholder="Wal Mart">
+              </label>
+
+              <label class="brif-inputs__half">
+                <span>Email</span>
+                <input type="text" class="" placeholder="godunovofc@gmail.com">
+              </label>
+
+              <label class="brif-inputs__half">
+                <span>Телефон</span>
+                <input type="text" class="" placeholder="+7 (999) 123-456-78">
+              </label>
+            </div>
+            
+            <div class="brif-polit">              
+              <span>Нажимая на кнопку вы соглашаетесь с условиями </span>
+              <a href="#" class="underlined-animation">
+                <span class="swipe-animation underlined-animation__sub">
+                  <span class="swipe-animation__wrapper">
+                      <span class="swipe-animation__title">
+                          хранения и использования персональных данных
+                          <span class="swipe-animation__sub">
+                            хранения и использования персональных данных
+                          </span>
+                      </span>
+                  </span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end LINe -->
+    </form>
+  </section>
+  
+
+  <%= _.template(require('./../includes/footer.html'))(data) %>

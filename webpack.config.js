@@ -22,6 +22,7 @@ function generateHtmlPlugins(templateDir) {
 
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
+const newLocal = 9000;
 const config = {
   entry: ["./src/js/index.js", "./src/scss/style.scss"],
   output: {
@@ -75,6 +76,7 @@ const config = {
         use: ["raw-loader"]
       }
     ]
+    
   },
   plugins: [
     new MiniCssExtractPlugin({

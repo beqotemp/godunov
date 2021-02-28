@@ -4,361 +4,334 @@
 
 
 <%= _.template(require('./../includes/head.html'))(data) %>
-<%= _.template(require('./../includes/promo.html'))(data) %>
 <%= _.template(require('./../includes/header.html'))(data) %>
-<div class="background">
-  <div class="background__hole"></div>
-</div>
-<header id="main-header" class="main-header">
+
+
+<section id="first-screen" class="first-screen">
   <div class="container">
-    <div class="main-slider">
-      <!-- SLIDES -->
-      <div id="slides" class="main-slider__slides">
-        <!-- slide -->
-        <div class="slide showing">
-          <div class="main-slide slide-first">
-            <div class="ms-intro">
-              <div class="ms-intro__pre-title">
-                <span>/ </span>
-                <span>Оптом и в розницу</span>
-              </div>
-              <div class="ms-intro__heading">
-                <h1 class="ms-intro__title">
-                  Продажа грузовых и крупногабаритных шин
-                </h1>
-              </div>
-              <div class="ms-intro__subtitle">
-                <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
-              </div>
+    <div class="performance-counter home">
+      <%= _.template(require('./../includes/performance.html'))(data) %>
+    </div>
+    <div class="first-screen__wrapper">
+      <div class="news-callout">
+        <div class="header-news">
+          <a href="#" class="header-news-cart">
+            <div class="header-news-cart__poster">
+              <img src="../../img/blog/thi.png" alt="">
             </div>
-            <div class="ms-picture">
-              <div class="ms-picture__item">
-                <img src="../../img/slider/slider.png" alt="">
-              </div>
+            <div class="header-news-cart__heading">
+              <span class="header-news-cart__title">
+                <span>Как подготовить контент сайта</span>
+                не потеряв целое состояние
+              </span>
             </div>
-          </div>
+          </a>
+        </div>        
+      </div>
+      <div class="brand-slogan">
+        <div class="brand-slogan__heading">
+          <h2 class="brand-slogan__title">
+            <span>Мы агенство полного цикла</span>
+            <span class="pale"> производства цифровых продуктов </span>
+          </h2>
         </div>
-        <!-- slide END -->
-        
-        <!-- slide -->
-        <div class="slide">
-          <div class="main-slide slide-first">
-            <div class="ms-intro">
-              <div class="ms-intro__pre-title">
-                <span>/ </span>
-                <span>Консультация</span>
-              </div>
-              <div class="ms-intro__heading">
-                <h1 class="ms-intro__title">
-                  Бесплатно проконсультируем и ответим на все вопросы
-                </h1>
-              </div>
-              <div class="ms-intro__subtitle">
-                <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
-              </div>
-            </div>
-            <div class="ms-picture">
-              <div class="ms-picture__item ms-picture-second">
-                <img src="../../img/slider/slider2.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- slide END -->
-        <!-- slide -->
-        <div class="slide">
-          <div class="main-slide slide-third">
-            <div class="ms-intro">
-              <div class="ms-intro__pre-title">
-                <span>/ </span>
-                <span>Акция</span>
-              </div>
-              <div class="ms-intro__heading">
-                <h1 class="ms-intro__title">
-                  Скидки 20% на грузовые шины
-                </h1>
-              </div>
-              <div class="ms-intro__subtitle">
-                <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
-              </div>
-            </div>
-            <div class="ms-picture">
-              <div class="ms-picture__item ms-picture-second">
-                <img src="../../img/slider/slider2.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- slide END -->
-      </div>
-      <!-- slides END -->
-      <!-- Controlers -->
-      <div id="main-slider__dots" class="main-slider__dots dots"></div>
-      <div class="main-slider__arrows">
-        <div id="previous" class="slider-left-svg"></div>
-        <div id="next" class="slider-right-svg"></div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section id="oversized-preview" class="oversized-preview">
-  <div class="container">
-    <div class="oversized-preview__heading">
-      <h2 class="heading-first-type">
-        Крупногабаритные шины
-      </h2>
-      <a href="#" class="yellow-square-big">
-        <span>Все товары</span>
-      </a>
-    </div>
-    <div class="oversized-preview__wrapper">
-      <div class="row mp-product-row">
-
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        
-      </div>
-      <div class="oversized-preview__mobile-btn">
-        <a href="#" class="more-products-mobile-btn">
-          <span>Все товары</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="truck-preview" class="truck-preview">
-  <div class="container">
-    <div class="truck-preview__heading">
-      <h2 class="heading-first-type">
-        Грузовые шины
-      </h2>
-      <a href="#" class="yellow-square-big">
-        <span>Все товары</span>
-      </a>
-    </div>
-    <div class="truck-preview__wrapper">
-      <div class="row mp-product-row">
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        <%= _.template(require('./../includes/product-card.html'))(data) %>
-        
-      </div>
-      <div class="truck-preview__mobile-btn">
-        <a href="#" class="more-products-mobile-btn">
-          <span>Все товары</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-  
-  
-<section id="benefits" class="benefits">
-  <div class="container">
-    <div class="benefits__heading">
-      <h2 class="heading-first-type">
-        Почему выгодно покупать у нас?
-      </h2>
-    </div>
-    <div class="benefits__wrapper">
-      <div class="row">
-        <!-- item -->
-        <div class="benefit__wrapp">
-          <div class="benefit">
-            <div class="benefit__head">
-              <img src="../../img/general/benefit1.png" alt="">
-            </div>
-            <div class="benefit__heading">
-              <span>Вы знаете что покупает</span>
-            </div>
-            <div class="benefit__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
-                и самостоятельно выбрать шины. Если такой возможности нет,
-                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- item END -->
-        <!-- item -->
-        <div class="benefit__wrapp">
-          <div class="benefit">
-            <div class="benefit__head">
-              <img src="../../img/general/benefit2.png" alt="">
-            </div>
-            <div class="benefit__heading">
-              <span>Доставка в любой город мира</span>
-            </div>
-            <div class="benefit__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
-                и самостоятельно выбрать шины. Если такой возможности нет,
-                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- item END -->
-        <!-- item -->
-        <div class="benefit__wrapp">
-          <div class="benefit">
-            <div class="benefit__head">
-              <img src="../../img/general/benefit3.png" alt="">
-            </div>
-            <div class="benefit__heading">
-              <span>Лучшие цены на рынке</span>
-            </div>
-            <div class="benefit__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
-                и самостоятельно выбрать шины. Если такой возможности нет,
-                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- item END -->
-        <!-- item -->
-        <div class="benefit__wrapp">
-          <div class="benefit">
-            <div class="benefit__head">
-              <img src="../../img/general/benefit4.png" alt="">
-            </div>
-            <div class="benefit__heading">
-              <span>Гибкие условия оплаты</span>
-            </div>
-            <div class="benefit__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад в Москве 
-                и самостоятельно выбрать шины. Если такой возможности нет,
-                вы находитесь в регионе - высылаем подробные фото отгружаемых шин
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- item END -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="reviews" class="reviews">
-  <div class="container">
-    <div class="reviews__heading">
-      <h2 class="heading-first-type">
-        Отзывы
-      </h2>  
-      <div class="reviews__buttons">
-        <a href="" class="make-review-text-btn">
-          <span>Оставить отзыв</span>
-        </a>
-        <a href="#" class="gray-empty-btn">
-          <span>Больше отзывов</span>
-        </a>
-      </div>
-    </div>
-    
-    <div class="reviews__wrapper">
-      <div class="row reviews-row">
-        
-
-        <%= _.template(require('./../includes/review-cart.html'))(data) %>
-        <%= _.template(require('./../includes/review-cart.html'))(data) %>
-        <%= _.template(require('./../includes/review-cart.html'))(data) %>
-        <%= _.template(require('./../includes/review-cart.html'))(data) %>
-        <%= _.template(require('./../includes/review-cart.html'))(data) %>
-        <%= _.template(require('./../includes/review-cart.html'))(data) %>
-
-      </div>
-      <div class="reviews__mobile-btn">
-        <a href="#" class="more-reviews-mobile-btn">
-          <span>Все отзывы</span>
-        </a>
-        <a href="#" class="make-review-text-btn">
-          <span>Оставить отзыв</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<seciond id="about" class="about">
-  <div class="about__wrapper">
-    <div class="container">
-      <div class="about__body">
-        <div class="about__heading">
-          <h2 class="heading-first-type">
-            Rocket shina - работаем с 2010 года принося пользу нашим клиентам 
-          </h2>  
-          <div class="about__subtitle">
-            <p>
-              Мы всегда предлагаем Вам приехать к нам на склад 
-              в Москве и самостоятельно выбрать шины. Если такой
-              возможности нет, вы находитесь в регионе - высылаем
-              подробные
-            </p>
-          </div>
-          <div class="about__picture" style="background-image: url(../../img/general/about.png);"></div>
-        </div>
-        
-        
-        
-        <div class="about__block">
-          <div class="about-box__head">
-            <img src="../../img/general/about2.png" alt="">
-          </div>
-          <div class="about-box__intro">
-            <p>
-              Мы всегда предлагаем Вам приехать к нам на склад 
-              в Москве и самостоятельно выбрать шины. Если такой
-              возможности нет, вы находитесь в регионе - высылаем
-              подробные фото отгружаемых
-            </p>
-          </div>
-          <div class="about-box__btn">
-            <a href="">
-              <span>О компании</span>
-            </a>
-          </div>
+        <div class="brand-slogan__coins">
+          <img class="brand-slogan__coins-item" src="../../img/general/coins.png">
         </div>
       </div>
       
-    </div>
-  </div>
-</seciond>
+      <div class="brand-heading">
+        <h1 class="brand-heading__title">
+          Digital
+          <span>/</span>
+          Products
+        </h1>
+      </div>
 
-
-<%= _.template(require('./../includes/promot-section.html'))(data) %>
-
-<section id="fresh-articles" class="fresh-articles">
-  <div class="container">
-    <div class="fresh-articles__heading">
-      <h2 class="heading-first-type">
-        Статьи
-      </h2>
-      <a href="#" class="gray-empty-btn">
-        <span>Все статьи</span>
-      </a>
-    </div>
-    <div class="fresh-articles__wrapper">
-      <div class="row article-ro">
-        
-        <%= _.template(require('./../includes/article-preview.html'))(data) %>
-        <%= _.template(require('./../includes/article-preview.html'))(data) %>
-        <%= _.template(require('./../includes/article-preview.html'))(data) %>
-        
-        
+      <div class="mobile-down">
+        <a href="" class="mobile-down__body">
+          <div class="arrow-right-svg"></div>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
+<section id="cases" class="cases">
+  <div class="container">
+    <div class="cases__wrapper">
+      <a href="#" class="case" style="background-image: url(../../img/portfolio/1.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Tekhnokultura</span>
+              <span>
+                - онлайн магазин электроники широкого потребления
+              </span>
+            </div>
+          </div>
+          <div class="case__mob-disr">
+            <span>
+              Онлайн магазин электроники широкого потребления
+            </span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
+            </div>
+          </div>
+          <div class="case__figure">
+            <!-- <img src="../../img/portfolio/fig.png" alt=""> -->
+          </div>
+        </div>
+      </a>
+      <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png)">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Tekhnokultura</span> - онлайн магазин электроники широкого потребления
+            </div>
+          </div>
+          <div class="case__figure">
+            
+          </div>
+        </div>
+      </a>
+      <a href="#" class="case" style="background-image: url(../../img/portfolio/3.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
+            </div>
+          </div>
+          <div class="case__figure">
+            
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="arrow-circle-button cases-button">
+        <div class="arrow-circle-button__body">
+          <div class="arrow-right-svg"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="news">
+  <div class="container">
+    <div class="performance-counter home">
+      <div class="performance-counter__wrapper">
+        <span class="swipe-animation">
+          <span class="swipe-animation__wrapper">
+            <span class="swipe-animation__title performance-counter__small">
+              20
+              <span class="swipe-animation__sub">08</span>
+            </span>
+          </span>
+        </span>
+        <span class="swipe-animation">
+          <span class="swipe-animation__wrapper">
+            <span class="swipe-animation__title performance-counter__large">
+              56
+              <span class="swipe-animation__sub">16</span>
+            </span>
+          </span>
+        </span>
+        <span class="performance-counter__dot">
+          .
+        </span>
+        <span class="swipe-animation">
+          <span class="swipe-animation__wrapper">
+            <span class="swipe-animation__title performance-counter__small">
+              87
+              <span class="swipe-animation__sub">42</span>
+            </span>
+          </span>
+        </span>
+        <span class="performance-counter__dot">
+          .
+        </span>
+        <span class="swipe-animation">
+          <span class="swipe-animation__wrapper">
+            <span class="swipe-animation__title performance-counter__large">
+              23
+              <span class="swipe-animation__sub">23</span>
+            </span>
+          </span>
+        </span>
+        
+      </div>
+    </div>
+    <div class="news-heading">
+      <div class="news-heading__title">
+        <span>Блог</span>
+        <span class="little">
+          (+19)
+        </span>
+      </div>
+      <div class="news-heading__links">
+        <div class="news-heading__links-row">
+          <a href="#" class="news-heading__links-item underlined-animation">
+            <span class="underlined-animation__sub">
+              vc.ru
+            </span>
+          </a>
+          <span class="plus">+</span>
+          <a href="#" class="news-heading__links-item underlined-animation">
+            <span class="underlined-animation__sub">
+              CMS
+            </span>  
+          </a>
+        </div>
+        <div class="news-heading__links-row">
+          <a href="#" class="news-heading__links-item underlined-animation">
+            <span class="underlined-animation__sub">
+              Habr
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="news__wrapper">
+      
+      <!-- news cart -->
+      <div class="news__col">
+        <a href="#" class="news-cart">
+          <!-- news decoration -->
+          <div class="news-cart__deco">
+            <img src="../../img/general/deco.png" alt="">
+          </div>
+          <div class="news-cart__preview">
+            <img src="../../img/blog/yan.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Новости
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>«Яндекс» отключил SaveFrom,</span> Frigate и другие расширения в своём браузере
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+      <!-- news cart -->
+      <div class="news__col">
+        <a href="#" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/thi.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Новости
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+      <!-- news cart -->
+      <div class="news__col">
+        <a href="#" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/petr.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Новости
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+      <!-- news cart -->
+      <div class="news__col">
+        <a href="#" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/content.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Новости
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+       <!-- news cart -->
+       <div class="news__col">
+        <a href="#" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/film.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Новости
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+       <!-- news cart -->
+       <div class="news__col">
+        <a href="#" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/rock.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Новости
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+      <a href="#" class="arrow-circle-button news-button">
+        <div class="arrow-circle-button__body">
+          <div class="arrow-right-svg"></div>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section>
 
 <%= _.template(require('./../includes/modals.html'))(data) %>
 <%= _.template(require('./../includes/footer.html'))(data) %>
