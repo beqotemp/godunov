@@ -1,7 +1,7 @@
 .scrolling-icon {
     position: fixed;
     right: -26px;
-    bottom: 100px;
+    bottom: 16vh;
     height: 80px;
     width: 120px;
     @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
@@ -9,6 +9,7 @@
     }
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
         right: -41px;
+        bottom: 34vh;
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         display: none;

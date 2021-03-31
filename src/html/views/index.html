@@ -1,5 +1,5 @@
 <% var data = {
-  title: "Main Page | Project",
+  title: "Godunov Agency",
 }; %>
 
 
@@ -9,7 +9,7 @@
 
 <section id="first-screen" class="first-screen">
   <div class="container">
-    <div class="performance-counter home">
+    <div class="performance-counter vertical-center">
       <%= _.template(require('./../includes/performance.html'))(data) %>
     </div>
     <div class="first-screen__wrapper">
@@ -42,9 +42,7 @@
       
       <div class="brand-heading">
         <h1 class="brand-heading__title">
-          Digital
-          <span>/</span>
-          Products
+          Digital Agency
         </h1>
       </div>
 
@@ -60,7 +58,8 @@
 <section id="cases" class="cases">
   <div class="container">
     <div class="cases__wrapper">
-      <a href="#" class="case" style="background-image: url(../../img/portfolio/1.png);">
+      <!-- tehnokyltyra -->
+      <a data-number="0" href="#" class="case" style="background-image: url(../../img/portfolio/techno/preview.png)">
         <div class="case__intro">
           <div class="case__heading">
             <div class="case__title underlined-animation">
@@ -77,39 +76,92 @@
           </div>
         </div>
       </a>
-      <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png);">
+      <!-- psk 2.0 -->
+      <a data-number="3" href="#" class="case" style="background-image: url(../../img/portfolio/psk/preview.png);">
         <div class="case__intro">
           <div class="case__heading">
             <div class="case__title underlined-animation">
-              <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
+              <span class="underlined-animation__sub">ПСК ГАРАНТ</span>
+              <span>
+                - корпоративный сайт строительной компании
+              </span>
             </div>
           </div>
-          <div class="case__figure">
-            <!-- <img src="../../img/portfolio/fig.png" alt=""> -->
+          <div class="case__mob-disr">
+            <span>
+              Корпоративный сайт строительной компании
+            </span>
           </div>
         </div>
       </a>
-      <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png)">
+      <!-- balcan -->
+      <a data-number="2" href="#" class="case" style="background-image: url(../../img/portfolio/rocket-shina/preview.png);">
         <div class="case__intro">
           <div class="case__heading">
             <div class="case__title underlined-animation">
-              <span class="underlined-animation__sub">Tekhnokultura</span> - онлайн магазин электроники широкого потребления
+              <span class="underlined-animation__sub">Rocket Shina</span>
+              <span>
+                - каталог грузовых и крупногабаритных шин
+              </span>
             </div>
           </div>
-          <div class="case__figure">
-            
+          <div class="case__mob-disr">
+            <span>
+              Каталог грузовых и крупногабаритных шин
+            </span>
           </div>
         </div>
       </a>
-      <a href="#" class="case" style="background-image: url(../../img/portfolio/3.png);">
+      <a data-number="5" href="#" class="case" style="background-image: url(../../img/portfolio/hamcore/preview.png);">
         <div class="case__intro">
           <div class="case__heading">
             <div class="case__title underlined-animation">
-              <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
+              <span class="underlined-animation__sub">Hamcore</span>
+              <span>
+                - онлайн магазин промышленных принтеров
+              </span>
             </div>
           </div>
-          <div class="case__figure">
-            
+          <div class="case__mob-disr">
+            <span>
+              Онлайн магазин промышленных принтеров
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a data-number="1" href="#" class="case" style="background-image: url(../../img/portfolio/eventoutlet/preview.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Eventoutlet</span>
+              <span>
+                - микросервис, посвященный поиску специалистов для проведения мероприятий
+              </span>
+            </div>
+          </div>
+          <div class="case__mob-disr">
+            <span>
+              Микросервис, посвященный поиску специалистов для проведения мероприятий
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a data-number="4" href="#" class="case" style="background-image: url(../../img/portfolio/balcan/preview.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Balkan LPG Market </span>
+              <span>
+                - промосайт конференции посвященной трендам использования природного газа
+              </span>
+            </div>
+          </div>
+          <div class="case__mob-disr">
+            <span>
+              Промосайт конференции посвященной трендам использования природного газа
+            </span>
           </div>
         </div>
       </a>
@@ -202,82 +254,82 @@
       
       <!-- news cart -->
       <div class="news__col">
-        <a href="#" class="news-cart">
+        <a target="_blank" href="https://vc.ru/dev/216151-chto-nuzhno-znat-kazhdomu-kto-razrabatyvaet-svoy-internet-magazin" class="news-cart">
           <!-- news decoration -->
           <div class="news-cart__deco">
             <img src="../../img/general/deco.png" alt="">
           </div>
-          <div class="news-cart__preview">
-            <img src="../../img/blog/yan.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Новости
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>«Яндекс» отключил SaveFrom,</span> Frigate и другие расширения в своём браузере
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-      <!-- news cart -->
-      <div class="news__col">
-        <a href="#" class="news-cart">
-          <div class="news-cart__preview">
-            <img src="../../img/blog/thi.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Новости
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-      <!-- news cart -->
-      <div class="news__col">
-        <a href="#" class="news-cart">
-          <div class="news-cart__preview">
-            <img src="../../img/blog/petr.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Новости
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-      <!-- news cart -->
-      <div class="news__col">
-        <a href="#" class="news-cart">
           <div class="news-cart__preview">
             <img src="../../img/blog/content.png" alt="">
           </div>
           <div class="news-cart__heading">
             <ul class="news-cart__tags">
               <li class="news-cart__tag">
-                Новости
+                Разработка
               </li>
             </ul>
             <div class="news-cart__title">
-              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              <span>Что нужно знать каждому,</span>кто разрабатывает свой интернет-магазин
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+      <!-- news cart -->
+      <div class="news__col">
+        <a target="_blank" href="https://vc.ru/marketing/195597-filosofiya-myshleniya-zakazchika-pochemu-ne-poluchaetsya-prodat-dazhe-esli-silno-hochetsya" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/thi.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Маркетинг
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>Философия мышления заказчика.</span> Почему не получается продать даже если сильно хочется?
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+      <!-- news cart -->
+      <div class="news__col">
+        <a target="_blank" href="https://vc.ru/dev/158886-chetyre-etapa-razrabotki-sayta-ili-4-kruga-ada" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/petr.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Разработка
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>Четыре круга ада,</span> или четыре этапа разработки сайта
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- news cart END -->
+
+      <!-- news cart -->
+      <div class="news__col">
+        <a target="_blank" href="https://vc.ru/services/161947-chem-horosh-sayt-na-tilde-i-pochemu-ne-nado-lezt-v-dorogostoyashchie-resheniya" class="news-cart">
+          <div class="news-cart__preview">
+            <img src="../../img/blog/yan.png" alt="">
+          </div>
+          <div class="news-cart__heading">
+            <ul class="news-cart__tags">
+              <li class="news-cart__tag">
+                Разработка
+              </li>
+            </ul>
+            <div class="news-cart__title">
+              <span>Чем хорош сайт на Тильде?</span> И почему не надо лезть в дорогостоящие решения 
             </div>
           </div>
         </a>
@@ -286,18 +338,18 @@
 
        <!-- news cart -->
        <div class="news__col">
-        <a href="#" class="news-cart">
+        <a target="_blank" href="https://vc.ru/dev/153785-skolko-stoit-sayt" class="news-cart">
           <div class="news-cart__preview">
             <img src="../../img/blog/film.png" alt="">
           </div>
           <div class="news-cart__heading">
             <ul class="news-cart__tags">
               <li class="news-cart__tag">
-                Новости
+                Разработка
               </li>
             </ul>
             <div class="news-cart__title">
-              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              <span>Сколько стоит сайт?</span>
             </div>
           </div>
         </a>
@@ -306,18 +358,18 @@
 
        <!-- news cart -->
        <div class="news__col">
-        <a href="#" class="news-cart">
+        <a target="_blank" href="https://vc.ru/design/129341-kak-mikrovzaimodeystviya-v-interfeyse-vliyayut-na-vzaimodeystvie-s-polzovatelem" class="news-cart">
           <div class="news-cart__preview">
             <img src="../../img/blog/rock.png" alt="">
           </div>
           <div class="news-cart__heading">
             <ul class="news-cart__tags">
               <li class="news-cart__tag">
-                Новости
+                Разработка
               </li>
             </ul>
             <div class="news-cart__title">
-              <span>«Яндекс» отключил SaveFrom,</span>Frigate и другие расширения в своём браузере
+              <span>Микровзаимодействия в интерфейсе,</span> как на взаимодействие с пользователем
             </div>
           </div>
         </a>

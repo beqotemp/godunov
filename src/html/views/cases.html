@@ -1,5 +1,5 @@
 <% var data = {
-    title: "Main Page | Project",
+    title: "Godunov | Кейсы",
   }; %>
   
   
@@ -54,57 +54,119 @@
   <section id="cases" class="cases cases-page">
     <div class="container">
       <div class="cases__wrapper">
-        <a href="#" class="case" style="background-image: url(../../img/portfolio/1.png);">
-          <div class="case__intro">
-            <div class="case__heading">
-              <div class="case__title underlined-animation">
-                <span class="underlined-animation__sub">Tekhnokultura</span> - онлайн магазин электроники широкого потребления
-              </div>
-            </div>
-            <div class="case__figure"></div>
-          </div>
-        </a>
-        <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png);">
-          <div class="case__intro">
-            <div class="case__heading">
-              <div class="case__title underlined-animation">
-                <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
-              </div>
-            </div>
-            <div class="case__figure">
-              <!-- <img src="../../img/portfolio/fig.png" alt=""> -->
+        
+      <!-- tehnokyltyra -->
+      <a data-number="0" href="#" class="case" style="background-image: url(../../img/portfolio/techno/preview.png)">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Tekhnokultura</span>
+              <span>
+                - онлайн магазин электроники широкого потребления
+              </span>
             </div>
           </div>
-        </a>
-        <a href="#" class="case" style="background-image: url(../../img/portfolio/2.png)">
-          <div class="case__intro">
-            <div class="case__heading">
-              <div class="case__title underlined-animation">
-                <span class="underlined-animation__sub">Tekhnokultura</span> - онлайн магазин электроники широкого потребления
-              </div>
-            </div>
-            <div class="case__figure">
-              
+          <div class="case__mob-disr">
+            <span>
+              Онлайн магазин электроники широкого потребления
+            </span>
+          </div>
+        </div>
+      </a>
+      <!-- psk 2.0 -->
+      <a data-number="3" href="#" class="case" style="background-image: url(../../img/portfolio/psk/preview.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">ПСК ГАРАНТ</span>
+              <span>
+                - корпоративный сайт строительной компании
+              </span>
             </div>
           </div>
-        </a>
-        <a href="#" class="case" style="background-image: url(../../img/portfolio/3.png);">
-          <div class="case__intro">
-            <div class="case__heading">
-              <div class="case__title underlined-animation">
-                <span class="underlined-animation__sub">Rocket Shina</span> rest title оставшийся тайтл, не знаю что и зказать. Ну и ну...
-              </div>
-            </div>
-            <div class="case__figure">
-              
+          <div class="case__mob-disr">
+            <span>
+              Корпоративный сайт строительной компании
+            </span>
+          </div>
+        </div>
+      </a>
+      <!-- balcan -->
+      <a data-number="2" href="#" class="case" style="background-image: url(../../img/portfolio/rocket-shina/preview.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Rocket Shina</span>
+              <span>
+                - каталог грузовых и крупногабаритных шин
+              </span>
             </div>
           </div>
-        </a>
+          <div class="case__mob-disr">
+            <span>
+              Каталог грузовых и крупногабаритных шин
+            </span>
+          </div>
+        </div>
+      </a>
+      <a data-number="5" href="#" class="case" style="background-image: url(../../img/portfolio/hamcore/preview.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Hamcore</span>
+              <span>
+                - онлайн магазин промышленных принтеров
+              </span>
+            </div>
+          </div>
+          <div class="case__mob-disr">
+            <span>
+              Онлайн магазин промышленных принтеров
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a data-number="1" href="#" class="case" style="background-image: url(../../img/portfolio/eventoutlet/preview.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Eventoutlet</span>
+              <span>
+                - микросервис, посвященный поиску специалистов для проведения мероприятий
+              </span>
+            </div>
+          </div>
+          <div class="case__mob-disr">
+            <span>
+              Микросервис, посвященный поиску специалистов для проведения мероприятий
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a data-number="4" href="#" class="case" style="background-image: url(../../img/portfolio/balcan/preview.png);">
+        <div class="case__intro">
+          <div class="case__heading">
+            <div class="case__title underlined-animation">
+              <span class="underlined-animation__sub">Balkan LPG Market </span>
+              <span>
+                - промосайт конференции посвященной трендам использования природного газа
+              </span>
+            </div>
+          </div>
+          <div class="case__mob-disr">
+            <span>
+              Промосайт конференции посвященной трендам использования природного газа
+            </span>
+          </div>
+        </div>
+      </a>
   
       </div>
     </div>
   </section>
   
   
-  <%= _.template(require('./../includes/modals.html'))(data) %>
+
   <%= _.template(require('./../includes/footer.html'))(data) %>

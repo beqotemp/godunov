@@ -1,7 +1,7 @@
 // header 
 .header {
-    padding-top: 38px;
-    height: 10vh;
+    padding-top: 5vh;
+    height: 8vh;
     @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
         padding-top: 43px;
     }
@@ -95,7 +95,7 @@
     }
     &__list {
         display: flex;
-        margin-right: 77px;
+        margin-right: 64px;
         @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
             margin-right: 71px;
         }

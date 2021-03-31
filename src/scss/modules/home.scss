@@ -1,10 +1,10 @@
 .first-screen {
-    height: 90vh;
+    height: 86vh;
     @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
-        height: auto;
+        
     }
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
-        height: auto;
+        height: 70vh;
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         height: auto;
@@ -15,12 +15,12 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 7.5vh;
+        padding-top: 80px;
         @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
-            padding-top: 2.9vh;
+            padding-top: 80px;
         }
         @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
-            padding-top: 2.6vh;
+            padding-top: 68px;
         }
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             padding-top: 35px;
@@ -108,25 +108,19 @@
 .brand-heading {
     width: 100%;
     position: absolute;
-    top: 57vh;
+    bottom: 6vh;
     @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
-        position: relative;
-        top: unset;
-        margin-top: 165px;
+  
     }
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
-        top: unset;
-        margin-top: 146px;
-        position: relative;
+        bottom: 11vh; 
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         top: 174px;
         width: 55%;
-        margin-top: 0;
-        position: absolute;
     }
     &__title {
-        font-family: $TTS;
+        font-family: $TTM;
         font-size: 159px;
         margin-right: -13px;
         line-height: 197px;
@@ -225,13 +219,22 @@
 .performance-counter {
     user-select: none;
     pointer-events: none;
+    &.vertical-center {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #F6F6F6;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            transform: translate(-19%,-86%);
+        }
+    }
     &.home {
         position: absolute;    
         width: 100%;
         margin-top: 25vh;
         color: #F6F6F6;
         @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
-            margin-top: 16vh;
+            margin-top: 36vh;
         }
         @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
             margin-top: 13vh;
@@ -256,7 +259,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
-        transform: translateY(40%);
+        transform: translateY(53%);
         color: #fff;
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             left: -36%;
@@ -267,7 +270,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
-        transform: translateY(40%);
+        transform: translateY(53%);
         color: #fff;
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             left: -36%;
@@ -336,12 +339,10 @@
 
 // CASES
 .cases {
-    padding-top: 22px;
+    padding-top: 0px;
     @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
-        padding-top: 82px;
     }
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
-        padding-top: 87px;
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         overflow: hidden;
@@ -924,7 +925,7 @@
         }
     }
     &.portfolio &__wrapper {
-        padding: 173px 126px 216px 169px;
+        padding: 205px 126px 209px 150px;
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             padding: 159px 0 130px;
         }
