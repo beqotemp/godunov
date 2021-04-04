@@ -220,8 +220,8 @@
         justify-content: flex-end;
         overflow-x: hidden;
         overflow-y: auto;
-        
         background-size:cover;
+        -webkit-overflow-scrolling: touch;
     }
     &__cover {
         position: absolute;
@@ -437,6 +437,7 @@
         }
     }
     &__mirror {
+        display: none;
         position: absolute;
         right: 0;
         top: 0;

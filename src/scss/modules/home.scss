@@ -1,10 +1,10 @@
 .first-screen {
-    height: 86vh;
+    height: 82vh;
     @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
         
     }
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
-        height: 70vh;
+        height: 52vh;
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         height: auto;
@@ -49,7 +49,8 @@
         }
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             max-width: 100%;
-            margin-top: 262px;
+            margin-top: 175px;
+            z-index: 99;
         }
     }
     &__title {
@@ -89,6 +90,8 @@
             display: block;
         }
         img {
+            width: 82px;
+            height: auto;
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
                 width: 75px;
             }
@@ -198,7 +201,7 @@
         position: relative;
     }
     &__title {
-        font-family: $TTR;
+        font-family: $TTM;
         font-size: 16px;
         color: #000;
         line-height: 21.33px;
@@ -222,6 +225,15 @@
     &.vertical-center {
         position: absolute;
         top: 50%;
+        transform: translateY(-50%);
+        color: #F6F6F6;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            transform: translate(-19%,-86%);
+        }
+    }
+    &.vertical-bottom {
+        position: absolute;
+        top: 70%;
         transform: translateY(-50%);
         color: #F6F6F6;
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
@@ -431,13 +443,13 @@
     display: flex;
     flex-direction: column;
     background-color: #212121;
-    background-size: 758px;
+    background-size: cover;
     background-position: 50%;
+    background-repeat:no-repeat;
     height: 758px;
     flex: 0 0 50%;
     max-width: 50%;
     transition: .4s;
-    will-change: background-size;
     @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
         height: 572px;
         background-size: 572px;
@@ -454,14 +466,19 @@
         background-size: cover;
         position: relative;
     }
-    &:hover {
-        background-size: 140%;
-        @media screen and (max-width: $beforeTableWidth) {        // max 767    
-            background-size: cover;
-        }
-    }
+    
     &:hover .underlined-animation__sub:after{
         right: 0;
+    }
+    &__heading {
+        &.dark-title {
+            .case__title span.underlined-animation__sub {
+                color: #000;
+            }
+            .case__title span{
+                color: #141313;
+            }
+        }
     }
     &__intro {
         display: flex;
@@ -773,6 +790,7 @@
         z-index: 55;
         img {
             transform: translateY(-50%);
+            height: 70px;
         }
     }
     &__heading {
@@ -786,7 +804,7 @@
         }
     }
     &__tags {
-        font-family: $TTR;
+        font-family: $TTM;
         color: #000;
         opacity: .5;
         font-size: 14px;
@@ -799,7 +817,7 @@
         }
     }
     &__title {
-        font-family: $TTR;
+        font-family: $TTM;
         font-size: 17px;
         color: #000;
         line-height: 23px;
@@ -970,7 +988,7 @@
             margin-left: 0;
         }
         & img {
-            width: 100px;
+            width: 98px;
             height: auto;
             @media screen and (max-width: $beforeTableWidth) {        // max 767    
                 width: 70px;

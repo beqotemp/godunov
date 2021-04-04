@@ -85,6 +85,7 @@
             margin-top: 35px;
         }
         img {
+            width: 88px;
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
                 width: 72px;
             }
@@ -141,6 +142,11 @@
         }
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             font-size: 33px;
+            line-height: 53px;
+            margin-top: unset;
+        }
+        @media screen and (max-width: $smPhoneWidth) {        // max 767    
+            font-size: 28px;
             line-height: 53px;
             margin-top: unset;
         }

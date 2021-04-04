@@ -26,22 +26,28 @@
         <!-- links -->
         <div class="news-heading__links">
           <div class="news-heading__links-row">
-            <a href="#" class="news-heading__links-item underlined-animation">
+            <a target="_blank" href="https://vc.ru/u/501056-studiya-godunova" class="news-heading__links-item underlined-animation">
               <span class="underlined-animation__sub">
                 vc.ru
               </span>
             </a>
             <span class="plus">+</span>
-            <a href="#" class="news-heading__links-item underlined-animation">
+            <a target="_blank" href="https://ratingruneta.ru/agency-godunov-digital/" class="news-heading__links-item underlined-animation">
               <span class="underlined-animation__sub">
-                CMS
+                Рейтинг Рунета
               </span>  
             </a>
           </div>
           <div class="news-heading__links-row">
-            <a href="#" class="news-heading__links-item underlined-animation">
+            <a target="_blank" href="https://www.facebook.com/godunov.digital" class="news-heading__links-item underlined-animation">
               <span class="underlined-animation__sub">
-                Habr
+                facebook
+              </span>
+            </a>
+            <span class="plus">+</span>
+            <a target="_blank" href="https://www.instagram.com/godunov.digital/" class="news-heading__links-item underlined-animation">
+              <span class="underlined-animation__sub">
+                Instagram
               </span>
             </a>
           </div>
@@ -129,7 +135,7 @@
 
       <a data-number="1" href="#" class="case" style="background-image: url(../../img/portfolio/eventoutlet/preview.png);">
         <div class="case__intro">
-          <div class="case__heading">
+          <div class="case__heading dark-title">
             <div class="case__title underlined-animation">
               <span class="underlined-animation__sub">Eventoutlet</span>
               <span>
@@ -169,4 +175,6 @@
   
   
 
+  <%= _.template(require('./../includes/modals.html'))(data) %>
   <%= _.template(require('./../includes/footer.html'))(data) %>
+  

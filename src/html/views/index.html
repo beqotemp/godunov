@@ -8,21 +8,28 @@
 
 
 <section id="first-screen" class="first-screen">
+  <!-- scroll icon -->
+
+  <div class="scrolling-icon">
+    <div class="scrolling-icon__lines"></div>
+    <div class="scrolling-icon__dot"></div>
+  </div>
   <div class="container">
-    <div class="performance-counter vertical-center">
+    <div class="performance-counter vertical-bottom">
       <%= _.template(require('./../includes/performance.html'))(data) %>
     </div>
+
     <div class="first-screen__wrapper">
       <div class="news-callout">
         <div class="header-news">
-          <a href="#" class="header-news-cart">
+          <a target="_blank" href="https://vc.ru/design/129341-kak-mikrovzaimodeystviya-v-interfeyse-vliyayut-na-vzaimodeystvie-s-polzovatelem" class="header-news-cart">
             <div class="header-news-cart__poster">
-              <img src="../../img/blog/thi.png" alt="">
+              <img src="../../img/blog/seventh.png" alt="">
             </div>
             <div class="header-news-cart__heading">
               <span class="header-news-cart__title">
-                <span>Как подготовить контент сайта</span>
-                не потеряв целое состояние
+                <span>Микровзаимодействия в интерфейсе,</span>
+                как влияет на взаимодействие с пользователем
               </span>
             </div>
           </a>
@@ -40,11 +47,11 @@
         </div>
       </div>
       
-      <div class="brand-heading">
+      <!-- <div class="brand-heading">
         <h1 class="brand-heading__title">
           Digital Agency
         </h1>
-      </div>
+      </div> -->
 
       <div class="mobile-down">
         <a href="" class="mobile-down__body">
@@ -130,43 +137,7 @@
         </div>
       </a>
 
-      <a data-number="1" href="#" class="case" style="background-image: url(../../img/portfolio/eventoutlet/preview.png);">
-        <div class="case__intro">
-          <div class="case__heading">
-            <div class="case__title underlined-animation">
-              <span class="underlined-animation__sub">Eventoutlet</span>
-              <span>
-                - микросервис, посвященный поиску специалистов для проведения мероприятий
-              </span>
-            </div>
-          </div>
-          <div class="case__mob-disr">
-            <span>
-              Микросервис, посвященный поиску специалистов для проведения мероприятий
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <a data-number="4" href="#" class="case" style="background-image: url(../../img/portfolio/balcan/preview.png);">
-        <div class="case__intro">
-          <div class="case__heading">
-            <div class="case__title underlined-animation">
-              <span class="underlined-animation__sub">Balkan LPG Market </span>
-              <span>
-                - промосайт конференции посвященной трендам использования природного газа
-              </span>
-            </div>
-          </div>
-          <div class="case__mob-disr">
-            <span>
-              Промосайт конференции посвященной трендам использования природного газа
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <a href="#" class="arrow-circle-button cases-button">
+      <a href="https://godunov.digital/cases" class="arrow-circle-button cases-button">
         <div class="arrow-circle-button__body">
           <div class="arrow-right-svg"></div>
         </div>
@@ -229,22 +200,28 @@
       </div>
       <div class="news-heading__links">
         <div class="news-heading__links-row">
-          <a href="#" class="news-heading__links-item underlined-animation">
+          <a target="_blank" href="https://vc.ru/u/501056-studiya-godunova" class="news-heading__links-item underlined-animation">
             <span class="underlined-animation__sub">
               vc.ru
             </span>
           </a>
           <span class="plus">+</span>
-          <a href="#" class="news-heading__links-item underlined-animation">
+          <a target="_blank" href="https://ratingruneta.ru/agency-godunov-digital/" class="news-heading__links-item underlined-animation">
             <span class="underlined-animation__sub">
-              CMS
+              Рейтинг Рунета
             </span>  
           </a>
         </div>
         <div class="news-heading__links-row">
-          <a href="#" class="news-heading__links-item underlined-animation">
+          <a target="_blank" href="https://www.facebook.com/godunov.digital" class="news-heading__links-item underlined-animation">
             <span class="underlined-animation__sub">
-              Habr
+              facebook
+            </span>
+          </a>
+          <span class="plus">+</span>
+          <a target="_blank" href="https://www.instagram.com/godunov.digital/" class="news-heading__links-item underlined-animation">
+            <span class="underlined-animation__sub">
+              Instagram
             </span>
           </a>
         </div>
@@ -252,130 +229,130 @@
     </div>
     <div class="news__wrapper">
       
-      <!-- news cart -->
-      <div class="news__col">
-        <a target="_blank" href="https://vc.ru/dev/216151-chto-nuzhno-znat-kazhdomu-kto-razrabatyvaet-svoy-internet-magazin" class="news-cart">
-          <!-- news decoration -->
-          <div class="news-cart__deco">
-            <img src="../../img/general/deco.png" alt="">
-          </div>
-          <div class="news-cart__preview">
-            <img src="../../img/blog/content.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Разработка
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>Что нужно знать каждому,</span>кто разрабатывает свой интернет-магазин
+         <!-- news cart -->
+         <div class="news__col">
+          <a target="_blank" href="https://vc.ru/dev/216151-chto-nuzhno-znat-kazhdomu-kto-razrabatyvaet-svoy-internet-magazin" class="news-cart">
+            <!-- news decoration -->
+            <div class="news-cart__deco">
+              <img src="../../img/general/deco.png" alt="">
             </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-      <!-- news cart -->
-      <div class="news__col">
-        <a target="_blank" href="https://vc.ru/marketing/195597-filosofiya-myshleniya-zakazchika-pochemu-ne-poluchaetsya-prodat-dazhe-esli-silno-hochetsya" class="news-cart">
-          <div class="news-cart__preview">
-            <img src="../../img/blog/thi.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Маркетинг
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>Философия мышления заказчика.</span> Почему не получается продать даже если сильно хочется?
+            <div class="news-cart__preview">
+              <img src="../../img/blog/first.png" alt="">
             </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-      <!-- news cart -->
-      <div class="news__col">
-        <a target="_blank" href="https://vc.ru/dev/158886-chetyre-etapa-razrabotki-sayta-ili-4-kruga-ada" class="news-cart">
-          <div class="news-cart__preview">
-            <img src="../../img/blog/petr.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Разработка
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>Четыре круга ада,</span> или четыре этапа разработки сайта
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Разработка
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>Что нужно знать каждому,</span>кто разрабатывает свой интернет-магазин
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-      <!-- news cart -->
-      <div class="news__col">
-        <a target="_blank" href="https://vc.ru/services/161947-chem-horosh-sayt-na-tilde-i-pochemu-ne-nado-lezt-v-dorogostoyashchie-resheniya" class="news-cart">
-          <div class="news-cart__preview">
-            <img src="../../img/blog/yan.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Разработка
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>Чем хорош сайт на Тильде?</span> И почему не надо лезть в дорогостоящие решения 
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+        <!-- news cart -->
+        <div class="news__col">
+          <a target="_blank" href="https://vc.ru/marketing/195597-filosofiya-myshleniya-zakazchika-pochemu-ne-poluchaetsya-prodat-dazhe-esli-silno-hochetsya" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/second.png" alt="">
             </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-       <!-- news cart -->
-       <div class="news__col">
-        <a target="_blank" href="https://vc.ru/dev/153785-skolko-stoit-sayt" class="news-cart">
-          <div class="news-cart__preview">
-            <img src="../../img/blog/film.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Разработка
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>Сколько стоит сайт?</span>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Маркетинг
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>Философия мышления заказчика.</span> Почему не получается продать даже если сильно хочется?
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-
-       <!-- news cart -->
-       <div class="news__col">
-        <a target="_blank" href="https://vc.ru/design/129341-kak-mikrovzaimodeystviya-v-interfeyse-vliyayut-na-vzaimodeystvie-s-polzovatelem" class="news-cart">
-          <div class="news-cart__preview">
-            <img src="../../img/blog/rock.png" alt="">
-          </div>
-          <div class="news-cart__heading">
-            <ul class="news-cart__tags">
-              <li class="news-cart__tag">
-                Разработка
-              </li>
-            </ul>
-            <div class="news-cart__title">
-              <span>Микровзаимодействия в интерфейсе,</span> как на взаимодействие с пользователем
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+        <!-- news cart -->
+        <div class="news__col">
+          <a target="_blank" href="https://vc.ru/dev/158886-chetyre-etapa-razrabotki-sayta-ili-4-kruga-ada" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/petr.png" alt="">
             </div>
-          </div>
-        </a>
-      </div>
-      <!-- news cart END -->
-      <a href="#" class="arrow-circle-button news-button">
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Разработка
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>Четыре круга ада,</span> или четыре этапа разработки сайта
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+        <!-- news cart -->
+        <div class="news__col">
+          <a target="_blank" href="https://vc.ru/services/161947-chem-horosh-sayt-na-tilde-i-pochemu-ne-nado-lezt-v-dorogostoyashchie-resheniya" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/third.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Разработка
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>Чем хорош сайт на Тильде?</span> И почему не надо лезть в дорогостоящие решения 
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+         <!-- news cart -->
+         <div class="news__col">
+          <a target="_blank" href="https://vc.ru/dev/153785-skolko-stoit-sayt" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/sixth.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Разработка
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>Сколько стоит сайт?</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+  
+         <!-- news cart -->
+         <div class="news__col">
+          <a target="_blank" href="https://vc.ru/design/129341-kak-mikrovzaimodeystviya-v-interfeyse-vliyayut-na-vzaimodeystvie-s-polzovatelem" class="news-cart">
+            <div class="news-cart__preview">
+              <img src="../../img/blog/seventh.png" alt="">
+            </div>
+            <div class="news-cart__heading">
+              <ul class="news-cart__tags">
+                <li class="news-cart__tag">
+                  Разработка
+                </li>
+              </ul>
+              <div class="news-cart__title">
+                <span>Микровзаимодействия в интерфейсе,</span> как влияет на взаимодействие с пользователем
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- news cart END -->
+      <a href="https://godunov.digital/blog" class="arrow-circle-button news-button">
         <div class="arrow-circle-button__body">
           <div class="arrow-right-svg"></div>
         </div>
