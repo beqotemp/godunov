@@ -664,6 +664,7 @@
         }
     }
     &__cookie {
+        width: 100px;
         img {
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
                 width: 55px;
