@@ -816,6 +816,7 @@
     display: inline-flex;
     flex-direction: column;
     margin-bottom: 95px;
+    max-width: 100%;
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
         margin-bottom: 85px;
     }
