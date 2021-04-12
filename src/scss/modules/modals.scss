@@ -285,7 +285,7 @@
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         position: absolute;
-        top: 37px;
+        top: 10px;
         right: 30px;
     }
     &__body {
@@ -432,7 +432,7 @@
             line-height: 94px;
         }
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
-            font-size: 46px;
+            font-size: 39px;
             line-height: 57px;
         }
     }
@@ -469,8 +469,10 @@
         ul {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             li {
                 margin-right: 25px;
+                margin-bottom: 10px;
                 display: flex;
                 align-items: center;
                 justify-content: center;

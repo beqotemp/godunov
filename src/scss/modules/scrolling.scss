@@ -5,7 +5,7 @@
     height: 80px;
     width: 120px;
     z-index: 99;
-    @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
+    @media screen and (max-width: $beforeDesktopWidth) {        // max 1200    
         right: 10px;
         display: none;
     }

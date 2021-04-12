@@ -300,7 +300,8 @@
             margin-top: 57px;
             flex-direction: column;
             height: 100vh;
-            flex-wrap: auto;
+            flex-wrap: unset;
+            padding-bottom: 15px;
         }
     }
     &__title {
