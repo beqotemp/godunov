@@ -277,6 +277,10 @@
             border-bottom: 1px solid #000000;
             line-height: 37px;
             padding-bottom: 11px;
+            transition:.4s;
+            &._error {
+                border-bottom: 1px solid #e73737;
+            }
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
                 font-size: 11px;
             }
@@ -372,6 +376,13 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
     &.name-error {
         .brif-errors__name {
             display: block;

@@ -1,0 +1,214 @@
+.success-p {
+    &__wrapper {
+        padding-top: 120px;
+        display: flex;
+        flex: 1;
+        min-height: 83vh;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            padding-top: 60px;
+        }
+    }
+    &__main-title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: max-content;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            margin-top: -70px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-top: 60px;
+        }
+    }
+    &__we {
+        flex: 0 0 50%;
+        max-width: 50%;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            order: -1;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    &__btn {
+        flex: 0 0 15%;
+        max-width: 15%;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            order: 3;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            flex: 0 0 100%;
+            max-width: 100%;
+            order: 2;
+            margin-top: 20px;
+            margin-bottom: 40px;  
+        }
+    }
+    &__next {
+        flex: 0 0 15%;
+        max-width: 15%;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            order: 6;
+            flex: 0 0 27%;
+            max-width: 27%;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &__can {
+        padding-left: 70px;
+        flex: 0 0 20%;
+        max-width: 20%;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            order: 2;
+            padding-left: 0;
+            flex: 0 0 54%;
+            max-width: 54%;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &__footer {
+        position: relative;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-top: 40px;
+        }
+    }
+}
+.success-title {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    &__text {
+        span {
+            font-family: $TTM;
+            font-size: 127px;
+            line-height: 157px;
+            color: #000;
+            @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
+                font-size: 111px;
+                line-height: 138px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+                font-size: 115px;
+                line-height: 143px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767    
+                font-size: 50px;
+                line-height: 68px;
+            }
+        }
+    }
+    &__coin {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            padding-top: 10px;       
+        }
+        img {
+            height: 77px;
+            width: 77px;
+            @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
+                height: 67px;
+                width: 67px;                
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767    
+                height: 43px;
+                width: 43px;  
+                min-width: 43px;  
+            }
+        }
+    }
+}
+.success-block {
+    &__heading {
+        span {
+            font-family: $TTM;
+            font-size: 12px;
+            color: #878787;
+            text-transform: uppercase;
+        }
+    }
+    &__body {
+        margin-top: 35px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            margin-top: 20px;
+        }
+    }
+    &__links {
+        
+    }
+    &__thank {
+        span {
+            font-family: $TTM;
+            font-size: 12px;
+            line-height: 20px;
+            color: #212121;
+            text-transform: uppercase;
+        }
+    }
+    &__item {
+        font-family: $TTM;
+        font-size: 12px;
+        color: #212121;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    &__back {
+        font-family: $TTM;
+        font-size: 12px;
+        color: #212121;
+        text-transform: uppercase;
+    }
+}
+.success-circle {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
+        height: 76px;
+        width: 76px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767    
+        margin: 0 auto;
+        height: 73px;
+        width: 73px;           
+    }
+    &:hover {
+        background-color: #FAC400;
+        .svg {
+            background-color: #000;
+            transition: .4s;
+        }
+    }
+    .svg {
+        background-color: #fff;
+        height: 20px;
+        width: 20px;
+        @media screen and (max-width: $beforeDesktopWidth) {        // max 767    
+            height: 16px;
+            width: 16px;    
+        }
+    }
+}
+.success-copywriting {
+    text-align: center;
+    font-family: $TTM;
+    font-size: 12px;
+    color: #878787;
+    text-transform: uppercase;    
+    padding-bottom: 40px;
+}
