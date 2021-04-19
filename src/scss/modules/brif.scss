@@ -326,6 +326,9 @@
             border-bottom: 1px solid #000000;
             line-height: 37px;
             padding-bottom: 11px;
+            &._error {
+                border-bottom: 1px solid #e73737;
+            }
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
                 font-size: 11px;
                 padding-bottom: 2px;
