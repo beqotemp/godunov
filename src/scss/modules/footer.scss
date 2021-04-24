@@ -17,6 +17,9 @@
     flex-direction: row;
     justify-content:space-between;
     z-index: 2;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767    
+        z-index: 999;
+    }
     &__logo {
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             display: none;
@@ -200,6 +203,7 @@
         right: 0;
         height: 160px;
         width: 160px;
+        z-index: 999;
     }
     &:hover &__circle {
         transform: scale(1);
