@@ -54,6 +54,7 @@ document.querySelectorAll('.article-cart').forEach((item)=>{
         event.preventDefault()
         modal.classList.add('active')
         modal.classList.add('headless')
+        document.getElementById("site").classList.add("overflow")
         modal.classList.add( articClasses[item.dataset.number])
     })
 })
@@ -62,15 +63,18 @@ document.querySelectorAll('.article-cart').forEach((item)=>{
 if(window.location.href.indexOf("why-tilda") > -1) {
     modal.classList.add('active')
     modal.classList.add('headless')
+    document.getElementById("site").classList.add("overflow")
     modal.classList.add( articClasses[3])
  }
  if(window.location.href.indexOf("how-much") > -1) {
     modal.classList.add('active')
     modal.classList.add('headless')
+    document.getElementById("site").classList.add("overflow")
     modal.classList.add( articClasses[4])
  }
  if(window.location.href.indexOf("what-know") > -1) {
     modal.classList.add('active')
     modal.classList.add('headless')
+    document.getElementById("site").classList.add("overflow")
     modal.classList.add( articClasses[0])
  }
