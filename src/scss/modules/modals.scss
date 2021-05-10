@@ -182,6 +182,10 @@
             transform: translateX(0);
         }
     }
+    &.headless .mcase__header{
+        display: none;
+    }
+    // casses
     &.active.techno .mcase__variable#techno {
         display: block;
     }
@@ -200,6 +204,68 @@
     &.active.hamcore .mcase__variable#hamcore {
         display: block;
     }
+
+    // blogic 
+    &.active.what-know-art .mcase__variable#what-know-art {
+        display: block;
+    }
+    &.active.philosophy-art .mcase__variable#philosophy-art {
+        display: block;
+    }
+    &.active.four-hell-circles-art .mcase__variable#four-hell-circles-art {
+        display: block;
+    }
+    &.active.why-tilda-art .mcase__variable#why-tilda-art {
+        display: block;
+    }
+    &.active.how-much-art .mcase__variable#how-much-art {
+        display: block;
+    }
+    &.active.micro-interface-art .mcase__variable#micro-interface-art {
+        display: block;
+    }
+    &.active.dark-patternt-art .mcase__variable#dark-patternt-art {
+        display: block;
+    }
+    &.active.harizmatic-art .mcase__variable#harizmatic-art {
+        display: block;
+    }
+    &.active.balkan-conf-art .mcase__variable#balkan-conf-art {
+        display: block;
+    }
+    &.active.eventoutleet-art .mcase__variable#eventoutleet-art {
+        display: block;
+    }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
 }
 .modal {
     position: fixed;
@@ -400,6 +466,12 @@
     }
 }
 .mcase {
+    h2,h3 {
+        font-size: 34px;
+        line-height: 47px;
+        font-family: $TTS;
+        color: #000000;
+    }
     &__header {
         display: flex;
         flex-direction: row;
@@ -421,6 +493,18 @@
     &__heading {
         position: relative;
         display: inline-block;
+    }
+    &__title-article {
+        font-family: $TTS;
+        font-size: 64px;
+        line-height: 74px;
+        color: #000;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 36px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            font-size: 29px;
+        }
     }
     &__title {
         font-family: $TTM;
@@ -685,11 +769,16 @@
         height: auto;
     }
 }
+
 .mscale-block {
     display: flex;
     flex-direction: row;
     padding-top: 75px;
     padding-bottom: 75px;
+    &.mscale-block__column {
+        flex-direction: column!important;
+        padding-top: 25px!important;
+    }
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
         padding-top: 45px;
         padding-bottom: 45px;
@@ -699,16 +788,37 @@
         padding-bottom: 35px;
         flex-direction: column;
     }
+    &__heading-blog {
+        max-width: 60%!important;
+        flex: 0 0 60%!important;
+        margin-bottom: 15px;
+    }
     &__heading {
         flex: 0 0 30%;
         max-width: 30%;
+        &.mscale-block__heading-wider {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             width: 100%;
             flex: unset;
             max-width:100%;
         }
     }
-
+    &__title-article {
+        font-family: $TTS;
+        font-size: 34px;
+        color: #000;
+        line-height: 48px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
+            font-size: 16px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            font-size: 17px;
+        }
+    }
     &__title {
         font-family: $TTS;
         font-size: 21px;
@@ -721,14 +831,34 @@
             font-size: 17px;
         }
     }
+    
     &__intro {
         flex: 0 0 70%;
         max-width: 70%;
+        &.mscale-block__intro-article {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin: 10px 0;
+        }
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             width: 100%;
             flex: unset;
             max-width:100%;
             margin-top: 9px;
+        }
+        ul {
+            font-family: $TTR;
+            font-size: 20px;
+            line-height: 32px;
+            color: #000;
+            li {
+                margin: 30px 0;
+                ul {
+                    li {
+                        margin: 0;
+                    }
+                }
+            }
         }
         p {
             font-family: $TTR;
@@ -938,5 +1068,53 @@
         transform: translateX(-50%);
         top: 100%;
         white-space: nowrap;
+    }
+}
+
+.modal-article {
+    &__block {
+        margin-top: 60px;
+    }
+    &__title {
+        font-family: $TTS;
+        font-size: 34px;
+        line-height: 48px;
+        color: #000000;
+    }
+    &__list {
+        li {
+            font-family: $TTR;
+            line-height: 32px;
+            font-size: 20px;
+            color: #000;
+            margin: 40px 0;
+            ul li {
+                margin: 0;
+            }
+        }
+    }    
+}
+.l-island-a {
+    margin: 20px 0;   
+    p {
+        font-family: $TTR;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000;
+        mark {
+            background-color: rgba(255,145,167,.22);
+        }
+    }
+    ul {
+        li {
+            font-family: $TTR;
+            line-height: 32px;
+            font-size: 20px;
+            color: #000;
+            margin: 40px 0;
+            ul li {
+                margin: 0;
+            }
+        }
     }
 }

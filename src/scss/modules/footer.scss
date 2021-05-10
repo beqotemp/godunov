@@ -3,6 +3,7 @@
     background-color: #171618;
     padding: 126px 0 48px;
     overflow: hidden;
+    z-index: 1;
     @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
         padding: 93px 0 38px;
     }
@@ -219,7 +220,7 @@
         z-index: 1;
         span {
             font-family: $TTS;
-            font-size: 14px;
+            font-size: 18px;
             color: #000;
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767    
                 font-size: 13px;

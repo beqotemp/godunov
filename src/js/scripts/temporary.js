@@ -22,10 +22,10 @@ document.getElementById("modal-close").addEventListener('click', ()=>{
     document.getElementById("modal").className = '';
 })
 // Portfolios 
-let fullProjectName = ['Технокультура', 'Eventoutlet', 'Rocket Shina','ПСК Гарант','Balkan LPG Market','Hamcore']
+let fullProjectName = ['Технокультура', 'Eventoutlet', 'Rocket Shina','ПСК','Balkan LPG Market','Hamcore']
 let PortfolioClasses = ['techno','event','rocket','psk','balcan','hamcore']
 let modal = document.getElementById("modal")
-document.querySelectorAll('.case').forEach((item,event)=>{
+document.querySelectorAll('.case').forEach((item)=>{
     
     item.addEventListener("click",(event)=>{
         event.preventDefault()
@@ -36,6 +36,41 @@ document.querySelectorAll('.case').forEach((item,event)=>{
     })
 })
 
+let articClasses = [
+    'what-know-art', 
+    'philosophy-art', 
+    'four-hell-circles-art',
+    'why-tilda-art',
+    'how-much-art',
+    'micro-interface-art',
+    'dark-patternt-art',
+    'harizmatic-art',
+    'balkan-conf-art',
+    'eventoutleet-art'
+]
+
+document.querySelectorAll('.article-cart').forEach((item)=>{
+    item.addEventListener("click", (event)=>{
+        event.preventDefault()
+        modal.classList.add('active')
+        modal.classList.add('headless')
+        modal.classList.add( articClasses[item.dataset.number])
+    })
+})
 
 
-
+if(window.location.href.indexOf("why-tilda") > -1) {
+    modal.classList.add('active')
+    modal.classList.add('headless')
+    modal.classList.add( articClasses[3])
+ }
+ if(window.location.href.indexOf("how-much") > -1) {
+    modal.classList.add('active')
+    modal.classList.add('headless')
+    modal.classList.add( articClasses[4])
+ }
+ if(window.location.href.indexOf("what-know") > -1) {
+    modal.classList.add('active')
+    modal.classList.add('headless')
+    modal.classList.add( articClasses[0])
+ }
