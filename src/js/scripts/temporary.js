@@ -21,6 +21,10 @@ document.getElementById("modal-close").addEventListener('click', ()=>{
     document.getElementById("site").classList.remove("overflow")
     document.getElementById("modal").className = '';
 })
+document.getElementById("special-modal-close").addEventListener('click', ()=>{
+    document.getElementById("site").classList.remove("overflow")
+    document.getElementById("special-modal").className = '';
+})
 // Portfolios 
 let fullProjectName = ['Технокультура', 'Eventoutlet', 'Rocket Shina','ПСК','Balkan LPG Market','Hamcore']
 let PortfolioClasses = ['techno','event','rocket','psk','balcan','hamcore']
@@ -58,23 +62,36 @@ document.querySelectorAll('.article-cart').forEach((item)=>{
         modal.classList.add( articClasses[item.dataset.number])
     })
 })
-
+function showOffer() {
+    setTimeout(()=>{
+        document.getElementById("special-modal").classList.add("active")
+        document.getElementById("site").classList.add("overflow")
+    },30000)
+}
 
 if(window.location.href.indexOf("why-tilda") > -1) {
     modal.classList.add('active')
     modal.classList.add('headless')
     document.getElementById("site").classList.add("overflow")
     modal.classList.add( articClasses[3])
+    showOffer();
  }
  if(window.location.href.indexOf("how-much") > -1) {
     modal.classList.add('active')
     modal.classList.add('headless')
     document.getElementById("site").classList.add("overflow")
     modal.classList.add( articClasses[4])
+    showOffer();
  }
  if(window.location.href.indexOf("what-know") > -1) {
     modal.classList.add('active')
     modal.classList.add('headless')
     document.getElementById("site").classList.add("overflow")
     modal.classList.add( articClasses[0])
+    showOffer();
  }
+
+ 
+
+
+ 
