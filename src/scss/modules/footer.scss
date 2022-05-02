@@ -343,6 +343,12 @@
             background-color: #fff;
         }
     }
+    &__partners {
+        img {
+            max-width: 270px;
+        }
+    }
+        
     &__dots {
         position: absolute;
         left: 50%;
