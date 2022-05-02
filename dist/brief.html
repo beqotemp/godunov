@@ -1,157 +1,177 @@
-
-  
-  
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	
-	<meta name="viewport" content="initial-scale=1,user-scalable=yes">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="shortcut icon" href="../../img/general/fav.png" />
-	<link rel="stylesheet" href="css/style.bundle.css" />
-	<title>Godunov | Brief</title>
-	<meta name="facebook-domain-verification" content="izxyh5g7oq8w1rjc1qfo6fki4abft8" />
-	<!-- Facebook Pixel Code -->
-	<script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window, document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '797241001222709');
-	fbq('track', 'PageView');
-	</script>
-	<noscript><img height="1" width="1" style="display:none"
-	src="https://www.facebook.com/tr?id=797241001222709&ev=PageView&noscript=1"
-	/></noscript>
-	<!-- End Facebook Pixel Code -->
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-	
-		ym(76357042, "init", {
-			clickmap:true,
-			trackLinks:true,
-			accurateTrackBounce:true,
-			webvisor:true
-		});
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/76357042" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
-</head>
-<body id="site" class="Site">
+  <head>
+    <meta charset="UTF-8" />
 
-	<!-- main wrapper -->
-	<div id="app" class="wrapper">
-  <div id="menu">
-    <div class="menu__bgc"></div>
-    <div class="menu">
-        <div class="menu__cover">
+    <meta name="viewport" content="initial-scale=1,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="../../img/general/fav.png" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <title>Godunov | Brief</title>
+    <meta name="facebook-domain-verification" content="izxyh5g7oq8w1rjc1qfo6fki4abft8" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "797241001222709");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=797241001222709&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function() {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(76357042, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      });
+    </script>
+    <noscript
+      ><div><img src="https://mc.yandex.ru/watch/76357042" style="position:absolute; left:-9999px;" alt="" /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body id="site" class="Site">
+    <!-- main wrapper -->
+    <div id="app" class="wrapper">
+      <div id="menu">
+        <div class="menu__bgc"></div>
+        <div class="menu">
+          <div class="menu__cover">
             <div class="menu__wrapper">
-                <div class="menu__header">
-                    <div class="menu__logo">
-                        <div class="godunov-svg menu-logo"></div>
-                    </div>
-                    <div class="menu__cross">
-                        <div id="menu-cross" class="cross active">
-                            <div class="cross__item"></div>
-                            <div class="cross__item"></div>
-                        </div>
-                    </div>
+              <div class="menu__header">
+                <div class="menu__logo">
+                  <div class="godunov-svg menu-logo"></div>
                 </div>
-                <div class="menu__body">
-                    <div class="menu__item menu__nav">
-                        <div class="menu__title">
-                            <span>Меню</span>
-                        </div>
-                        <div class="menu__core">
-                            <ul class="menu__nav-list">
-                                <li class="menu__nav-item">
-                                    <a href="https://godunov.digital/">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    Студия
-                                                    <span class="swipe-animation__sub">
-                                                        Студия
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="menu__nav-item">
-                                    <a href="https://godunov.digital/cases">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    Кейсы
-                                                    <span class="swipe-animation__sub">
-                                                        Кейсы
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>                            
-                                <li class="menu__nav-item">
-                                    <a href="https://godunov.digital/blog">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    Блог
-                                                    <span class="swipe-animation__sub">
-                                                        Блог
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="menu__nav-item">
-                                    <a href="https://godunov.digital/brief">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    Бриф
-                                                    <span class="swipe-animation__sub">
-                                                        Бриф
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="menu__item menu__soc">
-                        <div class="menu__title">
-                            <span>Соц сети</span>
-                        </div>
-                        <div class="menu__core">
-                            <ul class="menu__soc-list">
-                                <li class="menu__soc-item">
-                                    <a href="https://ratingruneta.ru/agency-godunov-digital/" target="_blank">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    Рейтинг Рунета
-                                                    <span class="swipe-animation__sub">
-                                                        Рейтинг Рунета
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <!-- <li class="menu__soc-item">
+                <div class="menu__cross">
+                  <div id="menu-cross" class="cross active">
+                    <div class="cross__item"></div>
+                    <div class="cross__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__body">
+                <div class="menu__item menu__nav">
+                  <div class="menu__title">
+                    <span>Меню</span>
+                  </div>
+                  <div class="menu__core">
+                    <ul class="menu__nav-list">
+                      <li class="menu__nav-item">
+                        <a href="https://godunov.digital/">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                Студия
+                                <span class="swipe-animation__sub">
+                                  Студия
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a href="https://godunov.digital/cases">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                Кейсы
+                                <span class="swipe-animation__sub">
+                                  Кейсы
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a href="https://godunov.digital/blog">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                Блог
+                                <span class="swipe-animation__sub">
+                                  Блог
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="menu__nav-item">
+                        <a href="https://godunov.digital/brief">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                Бриф
+                                <span class="swipe-animation__sub">
+                                  Бриф
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="menu__item menu__soc">
+                  <div class="menu__title">
+                    <span>Соц сети</span>
+                  </div>
+                  <div class="menu__core">
+                    <ul class="menu__soc-list">
+                      <li class="menu__soc-item">
+                        <a href="https://ratingruneta.ru/agency-godunov-digital/" target="_blank">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                Рейтинг Рунета
+                                <span class="swipe-animation__sub">
+                                  Рейтинг Рунета
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <!-- <li class="menu__soc-item">
                                     <a href="https://www.instagram.com/godunov.digital/" target="_blank">
                                         <span class="swipe-animation">
                                             <span class="swipe-animation__wrapper">
@@ -165,472 +185,467 @@
                                         </span>
                                     </a>
                                 </li> -->
-                                <li class="menu__soc-item">
-                                    <a href="https://vc.ru/u/501056-studiya-godunova" target="_blank">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    vc.ru
-                                                    <span class="swipe-animation__sub">
-                                                        vc.ru
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="menu__soc-item">
-                                    <a href="https://www.facebook.com/godunov.digital" target="_blank">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    facebook
-                                                    <span class="swipe-animation__sub">
-                                                        facebook
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="menu__item menu__contacts">
-                        <div class="menu__title">
-                            <span>Обратная связь</span>
-                        </div>
-                        <div class="menu__core">
-                            <ul class="menu__contacts-list">
-                                <li class="menu__contacts-item">
-                                    <a href="tel:+79102449639">
-                                        <span class="swipe-animation">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    +7 (910) 244-96-39
-                                                    <span class="swipe-animation__sub">
-                                                        +7 (910) 244-96-39
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="menu__contacts-item">
-                                    <a href="mailto:info@godunov.digital" class="underlined-animation">
-                                        <span class="swipe-animation underlined-animation__sub">
-                                            <span class="swipe-animation__wrapper">
-                                                <span class="swipe-animation__title">
-                                                    info@godunov.digital
-                                                    <span class="swipe-animation__sub">
-                                                        info@godunov.digital
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                      <li class="menu__soc-item">
+                        <a href="https://vc.ru/u/501056-studiya-godunova" target="_blank">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                vc.ru
+                                <span class="swipe-animation__sub">
+                                  vc.ru
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="menu__soc-item">
+                        <a href="https://www.facebook.com/godunov.digital" target="_blank">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                facebook
+                                <span class="swipe-animation__sub">
+                                  facebook
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="menu__footer">
-                    <div class="menu-copywriting">
-                        <span>©2017—2021</span>
-                    </div>
-                    <div class="menu-cookies">
-                        <img src="../../img/general/coins-second.png" alt="">
-                    </div>
+                <div class="menu__item menu__contacts">
+                  <div class="menu__title">
+                    <span>Обратная связь</span>
+                  </div>
+                  <div class="menu__core">
+                    <ul class="menu__contacts-list">
+                      <li class="menu__contacts-item">
+                        <a href="tel:+79102449639">
+                          <span class="swipe-animation">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                +7 (910) 244-96-39
+                                <span class="swipe-animation__sub">
+                                  +7 (910) 244-96-39
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="menu__contacts-item">
+                        <a href="mailto:info@godunov.digital" class="underlined-animation">
+                          <span class="swipe-animation underlined-animation__sub">
+                            <span class="swipe-animation__wrapper">
+                              <span class="swipe-animation__title">
+                                info@godunov.digital
+                                <span class="swipe-animation__sub">
+                                  info@godunov.digital
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              <div class="menu__footer">
+                <div class="menu-copywriting">
+                  <span>©2017—2021</span>
+                </div>
+                <div class="menu-cookies">
+                  <img src="../../img/general/coins-second.png" alt="" />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<header id="header" class="header">
-    <div class="container">
-        <div class="header__wrapper">
+      </div>
+      <header id="header" class="header">
+        <div class="container">
+          <div class="header__wrapper">
             <div class="header-preface">
-                <div class="header-preface__logo-wrapper">
-                    <a href="https://godunov.digital/">
-                        <div class="godunov-svg main-logo"></div>
-                    </a>
-                </div>
-                <div class="header-preface__inscription-wrapp">
-                    <span class="header-preface__inscription">Digital студия</span>
-                </div>
-                <div class="header-preface__dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+              <div class="header-preface__logo-wrapper">
+                <a href="https://godunov.digital/">
+                  <div class="godunov-svg main-logo"></div>
+                </a>
+              </div>
+              <div class="header-preface__inscription-wrapp">
+                <span class="header-preface__inscription">Digital студия</span>
+              </div>
+              <div class="header-preface__dots">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
             <div class="header-menu">
-                <nav class="header-navigation">
-                    <ul class="header-navigation__list">
-                        <li class="header-navigation__item">
-                            <a href="https://godunov.digital/cases">
-                                <span class="swipe-animation">
-                                    <span class="swipe-animation__wrapper">
-                                        <span class="swipe-animation__title">
-                                            Кейсы
-                                            <span class="swipe-animation__sub">
-                                                Кейсы
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="header-navigation__item">
-                         <a href="https://godunov.digital/blog">
-                             <span class="swipe-animation">
-                                 <span class="swipe-animation__wrapper">
-                                     <span class="swipe-animation__title">
-                                         Блог
-                                         <span class="swipe-animation__sub">
-                                             Блог
-                                         </span>
-                                     </span>
-                                 </span>
-                             </span>
-                         </a>
-                        </li>
-                        <li class="header-navigation__item">
-                            <a href="https://godunov.digital/brief">
-                                <span class="swipe-animation">
-                                    <span class="swipe-animation__wrapper">
-                                        <span class="swipe-animation__title">
-                                            Бриф
-                                            <span class="swipe-animation__sub">
-                                                Бриф
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                     
-                    </ul>
-                </nav>
-                <button id="menu-caller" class="menu-caller">
-                    <div class="menu-caller__icon">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
+              <nav class="header-navigation">
+                <ul class="header-navigation__list">
+                  <li class="header-navigation__item">
+                    <a href="https://godunov.digital/cases">
+                      <span class="swipe-animation">
+                        <span class="swipe-animation__wrapper">
+                          <span class="swipe-animation__title">
+                            Кейсы
+                            <span class="swipe-animation__sub">
+                              Кейсы
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header-navigation__item">
+                    <a href="https://godunov.digital/blog">
+                      <span class="swipe-animation">
+                        <span class="swipe-animation__wrapper">
+                          <span class="swipe-animation__title">
+                            Блог
+                            <span class="swipe-animation__sub">
+                              Блог
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header-navigation__item">
+                    <a href="https://godunov.digital/brief">
+                      <span class="swipe-animation">
+                        <span class="swipe-animation__wrapper">
+                          <span class="swipe-animation__title">
+                            Бриф
+                            <span class="swipe-animation__sub">
+                              Бриф
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button id="menu-caller" class="menu-caller">
+                <div class="menu-caller__icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </button>
             </div>
-        </div>
-       
-    </div>
-</header>
-
-
-
-  <section id="brif" class="brif">
-    <form id='idk' class="brif__wrapper forms-collector">
-      <div class="brif-heading">
-        <div class="brif__left">
-          <div class="brif__dots">
-            <div></div>
-            <div></div>
-            <div></div>
           </div>
         </div>
-        <div class="brif__right">
-          <div class="brif-heading__title">
-            <span>
-              Бриф
-            </span>
-          </div>
-          <div class="brif-heading__subtitle">
-            <p>Вы можете позвонить нам и мы заполним все за вас</p>
-                <p><a href="tel:+79102449639">
-                  <span class="swipe-animation">
-                    <span class="swipe-animation__wrapper">
-                      <span class="swipe-animation__title">
-                        +7 (910) 244-96-39
-                        <span class="swipe-animation__sub">
+      </header>
+
+      <section id="brif" class="brif">
+        <form id="idk" class="brif__wrapper forms-collector">
+          <div class="brif-heading">
+            <div class="brif__left">
+              <div class="brif__dots">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="brif__right">
+              <div class="brif-heading__title">
+                <span>
+                  Бриф
+                </span>
+              </div>
+              <div class="brif-heading__subtitle">
+                <p>Вы можете позвонить нам и мы заполним все за вас</p>
+                <p>
+                  <a href="tel:+79102449639">
+                    <span class="swipe-animation">
+                      <span class="swipe-animation__wrapper">
+                        <span class="swipe-animation__title">
                           +7 (910) 244-96-39
+                          <span class="swipe-animation__sub">
+                            +7 (910) 244-96-39
+                          </span>
                         </span>
                       </span>
                     </span>
-                  </span>
-                </a> или написать на почту <a href="mailto:info@godunov.digital">
-                  <span class="swipe-animation">
-                    <span class="swipe-animation__wrapper">
-                      <span class="swipe-animation__title">
-                        info@godunov.digital
-                        <span class="swipe-animation__sub">
+                  </a>
+                  или написать на почту
+                  <a href="mailto:info@godunov.digital">
+                    <span class="swipe-animation">
+                      <span class="swipe-animation__wrapper">
+                        <span class="swipe-animation__title">
                           info@godunov.digital
+                          <span class="swipe-animation__sub">
+                            info@godunov.digital
+                          </span>
                         </span>
                       </span>
                     </span>
-                  </span>
-                </a></p>
-          </div>
-        </div>
-      </div>
-      <!-- line -->
-      <div class="brif-lane">
-        <div class="brif__left">
-          <div class="brif-lane__pre-title">
-            <span>Услуги</span>
-          </div>
-        </div>
-        <div class="brif__right">
-          <div class="brif-lane__body">
-            <div class="brif-lane__description">
-              <span>Выберете одну или несколько услуг</span>
-            </div>
-            <div class="brif-checkboxes">
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="whatneed" value=""ux ui design/>
-                <div class="brif-checkboxes__body">
-                  <span>UI & UX дизайн</span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="whatneed" value="Брендинг"/>
-                <div class="brif-checkboxes__body">
-                  <span>Брендинг</span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="whatneed" value="Лого"/>
-                <div class="brif-checkboxes__body">
-                  <span>Логотип</span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="whatneed" value="Разработка"/>
-                <div class="brif-checkboxes__body">
-                  <span>Разработка</span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="whatneed" value="Интеграции"/>
-                <div class="brif-checkboxes__body">
-                  <span>Интеграции</span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="whatneed" value="Техническая поддержка"/>
-                <div class="brif-checkboxes__body">
-                  <span>Техническая поддержка</span>
-                </div>
-              </label>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- end LINe -->
+          <!-- line -->
+          <div class="brif-lane">
+            <div class="brif__left">
+              <div class="brif-lane__pre-title">
+                <span>Услуги</span>
+              </div>
+            </div>
+            <div class="brif__right">
+              <div class="brif-lane__body">
+                <div class="brif-lane__description">
+                  <span>Выберете одну или несколько услуг</span>
+                </div>
+                <div class="brif-checkboxes">
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="whatneed" value="" ux ui design />
+                    <div class="brif-checkboxes__body">
+                      <span>UI & UX дизайн</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="whatneed" value="Брендинг" />
+                    <div class="brif-checkboxes__body">
+                      <span>Брендинг</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="whatneed" value="Лого" />
+                    <div class="brif-checkboxes__body">
+                      <span>Логотип</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="whatneed" value="Разработка" />
+                    <div class="brif-checkboxes__body">
+                      <span>Разработка</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="whatneed" value="Интеграции" />
+                    <div class="brif-checkboxes__body">
+                      <span>Интеграции</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="whatneed" value="Техническая поддержка" />
+                    <div class="brif-checkboxes__body">
+                      <span>Техническая поддержка</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end LINe -->
 
-      <!-- line -->
-      <div class="brif-lane">
-        <div class="brif__left">
-          <div class="brif-lane__pre-title">
-            <span>Бюджет</span>
-          </div>
-        </div>
-        <div class="brif__right">
-          <div class="brif-lane__body">
-            <div class="brif-lane__description">
-              <span>Выберете ваш бюджет на проект</span>
+          <!-- line -->
+          <div class="brif-lane">
+            <div class="brif__left">
+              <div class="brif-lane__pre-title">
+                <span>Бюджет</span>
+              </div>
             </div>
-            <div class="brif-checkboxes">
-              <label class="brif-checkboxes__item">
-                <input type="radio" name="client-price" value="<100k" />
-                <div class="brif-checkboxes__body">
-                  <span>менее 100 тыс</span>
+            <div class="brif__right">
+              <div class="brif-lane__body">
+                <div class="brif-lane__description">
+                  <span>Выберете ваш бюджет на проект</span>
                 </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="radio" name="client-price" value="100k-300k" />
-                <div class="brif-checkboxes__body">
-                  <span>100-300 тыс</span>
+                <div class="brif-checkboxes">
+                  <label class="brif-checkboxes__item">
+                    <input type="radio" name="client-price" value="<100k" />
+                    <div class="brif-checkboxes__body">
+                      <span>менее 100 тыс</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="radio" name="client-price" value="100k-300k" />
+                    <div class="brif-checkboxes__body">
+                      <span>100-300 тыс</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="radio" name="client-price" value="300k-500k" />
+                    <div class="brif-checkboxes__body">
+                      <span>300-500 тыс</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="radio" name="client-price" value="500-1kk" />
+                    <div class="brif-checkboxes__body">
+                      <span>500 тыс - 1 млн</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="radio" name="client-price" value="more 1 kkk" />
+                    <div class="brif-checkboxes__body">
+                      <span>Более 1 млн</span>
+                    </div>
+                  </label>
                 </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="radio" name="client-price" value="300k-500k" />
-                <div class="brif-checkboxes__body">
-                  <span>300-500 тыс</span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="radio" name="client-price" value="500-1kk" />
-                <div class="brif-checkboxes__body">
-                  <span>500 тыс - 1 млн</span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="radio" name="client-price" value="more 1 kkk" />
-                <div class="brif-checkboxes__body">
-                  <span>Более 1 млн</span>
-                </div>
-              </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- end LINe -->
+          <!-- end LINe -->
 
-      <!-- line -->
-      <div class="brif-lane">
-        <div class="brif__left">
-          <div class="brif-lane__pre-title">
-            <span>Задача</span>
-          </div>
-        </div>
-        <div class="brif__right">
-          <div class="brif-lane__body">
-            <div class="brif-lane__description">
-              <span>Опишите вашу задачу</span>
-            </div>
-            <div class="brif-inputs">
-              <label class="brif-inputs__full">
+          <!-- line -->
+          <div class="brif-lane">
+            <div class="brif__left">
+              <div class="brif-lane__pre-title">
                 <span>Задача</span>
-                <input name="task" type="text" class="" placeholder="Начните писать" />
-              </label>
+              </div>
             </div>
-            <!-- <div class="brif-attachment">
+            <div class="brif__right">
+              <div class="brif-lane__body">
+                <div class="brif-lane__description">
+                  <span>Опишите вашу задачу</span>
+                </div>
+                <div class="brif-inputs">
+                  <label class="brif-inputs__full">
+                    <span>Задача</span>
+                    <input name="task" type="text" class="" placeholder="Начните писать" />
+                  </label>
+                </div>
+                <!-- <div class="brif-attachment">
           <label>
 
             <input type="file" class="brif-attachment__item" name="files" multiple>
           </label>
         </div> -->
-          </div>
-        </div>
-      </div>
-      <!-- end LINe -->
-
-      <!-- line -->
-      <div class="brif-lane">
-        <div class="brif__left">
-          <div class="brif-lane__pre-title">
-            <span>Контакты</span>
-          </div>
-        </div>
-        <div class="brif__right">
-          <div class="brif-lane__body">
-            <div class="brif-lane__description">
-              <span>Заполните контактные данные</span>
-            </div>
-            <div class="brif-inputs">
-              <label class="brif-inputs__half">
-                <span>Имя</span>
-                <input name="name" type="text" class="_req" placeholder="Александр" />
-              </label>
-
-              <label class="brif-inputs__half">
-                <span>Компания</span>
-                <input name="company" type="text" class="" placeholder="WalMart" />
-              </label>
-
-              <label class="brif-inputs__half">
-                <span>Email</span>
-                <input name="email" type="text" class="_req" placeholder="godunovofc@gmail.com" />
-              </label>
-
-              <label class="brif-inputs__half">
-                <span>Телефон</span>                                
-                <input name="phone" type="text" class="_req" placeholder="+7 (910) 244-96-39" />
-              </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- end LINe -->
+          <!-- end LINe -->
 
-      <!-- line -->
-      <div class="brif-lane">
-        <div class="brif__left">
-          <div class="brif-lane__pre-title">
-            <span>Источник</span>
-          </div>
-        </div>
-        <div class="brif__right">
-          <div class="brif-lane__body">
-            <div class="brif-lane__description">
-              <span>Откуда вы узнали о нас?</span>
+          <!-- line -->
+          <div class="brif-lane">
+            <div class="brif__left">
+              <div class="brif-lane__pre-title">
+                <span>Контакты</span>
+              </div>
             </div>
-            <div class="brif-checkboxes">
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="howuknow" value="Рейтинг"/>
-                <div class="brif-checkboxes__body">
-                  <span>Рейтинги</span>
+            <div class="brif__right">
+              <div class="brif-lane__body">
+                <div class="brif-lane__description">
+                  <span>Заполните контактные данные</span>
                 </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="howuknow" value="Рекомендации"/>
-                <div class="brif-checkboxes__body">
-                  <span>Рекомендации</span> 
+                <div class="brif-inputs">
+                  <label class="brif-inputs__half">
+                    <span>Имя</span>
+                    <input name="name" type="text" class="_req" placeholder="Александр" />
+                  </label>
+
+                  <label class="brif-inputs__half">
+                    <span>Компания</span>
+                    <input name="company" type="text" class="" placeholder="WalMart" />
+                  </label>
+
+                  <label class="brif-inputs__half">
+                    <span>Email</span>
+                    <input name="email" type="text" class="_req" placeholder="godunovofc@gmail.com" />
+                  </label>
+
+                  <label class="brif-inputs__half">
+                    <span>Телефон</span>
+                    <input name="phone" type="text" class="_req" placeholder="+7 (910) 244-96-39" />
+                  </label>
                 </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="howuknow" value="Кейсы"/>
-                <div class="brif-checkboxes__body">
-                  <span>
-                    Кейсы
-                  </span>
-                </div>
-              </label>
-              <label class="brif-checkboxes__item">
-                <input type="checkbox" name="howuknow" value="Соцсети"/>
-                <div class="brif-checkboxes__body">
-                  <span>Соц. сети</span>
-                </div>
-              </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- end LINe -->
+          <!-- end LINe -->
 
-      <!-- line -->
-      <div class="brif-lane">
-        <div class="brif__left">
-          <div class="brif-lane__pre-title">
-            <span></span>
+          <!-- line -->
+          <div class="brif-lane">
+            <div class="brif__left">
+              <div class="brif-lane__pre-title">
+                <span>Источник</span>
+              </div>
+            </div>
+            <div class="brif__right">
+              <div class="brif-lane__body">
+                <div class="brif-lane__description">
+                  <span>Откуда вы узнали о нас?</span>
+                </div>
+                <div class="brif-checkboxes">
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="howuknow" value="Рейтинг" />
+                    <div class="brif-checkboxes__body">
+                      <span>Рейтинги</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="howuknow" value="Рекомендации" />
+                    <div class="brif-checkboxes__body">
+                      <span>Рекомендации</span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="howuknow" value="Кейсы" />
+                    <div class="brif-checkboxes__body">
+                      <span>
+                        Кейсы
+                      </span>
+                    </div>
+                  </label>
+                  <label class="brif-checkboxes__item">
+                    <input type="checkbox" name="howuknow" value="Соцсети" />
+                    <div class="brif-checkboxes__body">
+                      <span>Соц. сети</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="brif__right">
-          <div class="brif-polit">
-            <span>Нажимая на кнопку вы соглашаетесь с условиями </span>
-            <a href="#" class="underlined-animation">
-              <span class="swipe-animation underlined-animation__sub">
-                <span class="swipe-animation__wrapper">
-                  <span class="swipe-animation__title">
-                    хранения и использования персональных данных
-                    <span class="swipe-animation__sub">
-                      хранения и использования персональных данных
+          <!-- end LINe -->
+
+          <!-- line -->
+          <div class="brif-lane">
+            <div class="brif__left">
+              <div class="brif-lane__pre-title">
+                <span></span>
+              </div>
+            </div>
+            <div class="brif__right">
+              <div class="brif-polit">
+                <span>Нажимая на кнопку вы соглашаетесь с условиями </span>
+                <a target="_blank" href="../../img/docs/pol.pdf" class="underlined-animation">
+                  <span class="swipe-animation underlined-animation__sub">
+                    <span class="swipe-animation__wrapper">
+                      <span class="swipe-animation__title">
+                        хранения и использования персональных данных
+                        <span class="swipe-animation__sub">
+                          хранения и использования персональных данных
+                        </span>
+                      </span>
                     </span>
                   </span>
-                </span>
-              </span>
-            </a>
+                </a>
+              </div>
+
+              <div id="errors-block" class="brif-errors">
+                <span class="brif-errors__title">В форме содержаться <span>ошибки</span></span>
+              </div>
+
+              <div class="brif-buttons">
+                <button type="submit" class="brif-button">
+                  <div class="arrow-right-svg svg"></div>
+                </button>
+              </div>
+            </div>
           </div>
-
-          <div id="errors-block" class="brif-errors">
-            <span class="brif-errors__title">В форме содержаться <span>ошибки</span></span>
-          </div>
-
-          <div class="brif-buttons">
-            <button type="submit" class="brif-button">
-              <div class="arrow-right-svg svg"></div>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- end LINe -->
-    </form>
-  </section>
-  
-
-
-
-      </div> <!-- end main wrapper -->
+          <!-- end LINe -->
+        </form>
+      </section>
+    </div>
+    <!-- end main wrapper -->
     <footer class="footer">
       <div class="container">
         <!-- perfomance -->
@@ -653,14 +668,14 @@
                 <a href="mailto:info@godunov.digital" class="underlined-animation">
                   <span class="swipe-animation underlined-animation__sub">
                     <span class="swipe-animation__wrapper">
-                        <span class="swipe-animation__title">
-                            info@godunov.digital
-                            <span class="swipe-animation__sub">
-                                info@godunov.digital
-                            </span>
+                      <span class="swipe-animation__title">
+                        info@godunov.digital
+                        <span class="swipe-animation__sub">
+                          info@godunov.digital
                         </span>
+                      </span>
                     </span>
-                </span>
+                  </span>
                 </a>
               </div>
               <div class="footer-mail__footer">
@@ -684,7 +699,7 @@
         <!-- Second -->
         <div class="footer-second">
           <div class="footer-second__cookies">
-            <img src="../../img/general/coins-second.png" alt="">
+            <img src="../../img/general/coins-second.png" alt="" />
           </div>
           <div class="footer-second__nav">
             <div class="footer-second__dots">
@@ -697,12 +712,12 @@
                 <a href="https://ratingruneta.ru/agency-godunov-digital/" target="_blank">
                   <span class="swipe-animation">
                     <span class="swipe-animation__wrapper">
-                        <span class="swipe-animation__title">
-                            Рейтинг Рунета
-                            <span class="swipe-animation__sub">
-                              Рейтинг Рунета
-                            </span>
+                      <span class="swipe-animation__title">
+                        Рейтинг Рунета
+                        <span class="swipe-animation__sub">
+                          Рейтинг Рунета
                         </span>
+                      </span>
                     </span>
                   </span>
                 </a>
@@ -725,12 +740,12 @@
                 <a href="https://vc.ru/u/501056-studiya-godunova" target="_blank">
                   <span class="swipe-animation">
                     <span class="swipe-animation__wrapper">
-                        <span class="swipe-animation__title">
-                            VC.ru
-                            <span class="swipe-animation__sub">
-                              VC.ru
-                            </span>
+                      <span class="swipe-animation__title">
+                        VC.ru
+                        <span class="swipe-animation__sub">
+                          VC.ru
                         </span>
+                      </span>
                     </span>
                   </span>
                 </a>
@@ -743,12 +758,12 @@
                 <a href="tel:+79102449639">
                   <span class="swipe-animation">
                     <span class="swipe-animation__wrapper">
-                        <span class="swipe-animation__title">
-                            +7 (910) 244-96-39
-                            <span class="swipe-animation__sub">
-                              +7 (910) 244-96-39
-                            </span>
+                      <span class="swipe-animation__title">
+                        +7 (910) 244-96-39
+                        <span class="swipe-animation__sub">
+                          +7 (910) 244-96-39
                         </span>
+                      </span>
                     </span>
                   </span>
                 </a>
@@ -758,8 +773,8 @@
               </div>
             </div>
           </div>
-        </div>           
-        
+        </div>
+
         <!-- Third -->
         <div class="footer-kaput">
           <div class="footer-kaput__dots">
@@ -803,6 +818,9 @@
               </a>             
             </div> -->
           </div>
+          <div class="footer-kaput__partners">
+            <img src="../../img/partners/arda.png" alt="" />
+          </div>
           <!-- <div class="footer-kaput__polit">
             <a href="#">
               <span class="swipe-animation">
@@ -818,7 +836,6 @@
             </a>
           </div>  -->
         </div>
-
       </div>
     </footer>
     <script src="sending-huending/another-script.js"></script>
