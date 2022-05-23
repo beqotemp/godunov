@@ -327,6 +327,8 @@
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         margin-top: 17px;
         padding-top: 26px;
+        display: flex;
+        flex-direction: column;
     }
     &__left {
         display: flex;
@@ -344,8 +346,13 @@
         }
     }
     &__partners {
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin: auto;
+            margin-top: 10px;
+        }
         img {
             max-width: 270px;
+            height: 25px;
         }
     }
         
