@@ -1,22 +1,22 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
   @font-face {
-    font-family: "TTInterfaces Regular"; 
-    src: url(../fonts/TTInterfaces-Regular.woff);
+    font-family: "SF Regular"; 
+    src: url(../fonts/SFUIDisplay-Regular.woff);
   }
   @font-face {
-    font-family: "TTInterfaces Semibold"; 
-    src: url(../fonts/TTInterfaces-SemiBold.woff);
-  }
-
-  @font-face {
-    font-family: "TTInterfaces Bold"; 
-    src: url(../fonts/TTInterfaces-Bold.woff);
+    font-family: "SF Semibold"; 
+    src: url(../fonts/SFUIDisplay-Semibold.woff);
   }
 
   @font-face {
-    font-family: "TTInterfaces Medium"; 
-    src: url(../fonts/TTInterfaces-Medium.woff);
+    font-family: "SF Bold"; 
+    src: url(../fonts/SFUIDisplay-Bold.woff);
+  }
+
+  @font-face {
+    font-family: "SF Medium"; 
+    src: url(../fonts/SFUIDisplay-Medium.woff);
   }
   
  @font-face {
